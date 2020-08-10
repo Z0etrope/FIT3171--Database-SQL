@@ -1,3 +1,4 @@
+-- Tutorial Week 2 - Jason Setiawan
 set echo on
 
 create table myfirstDB (
