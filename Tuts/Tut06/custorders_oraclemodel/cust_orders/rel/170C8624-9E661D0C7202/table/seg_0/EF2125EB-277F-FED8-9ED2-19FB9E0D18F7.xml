@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF2125EB-277F-FED8-9ED2-19FB9E0D18F7" name="PRODUCT">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<generatorID>AB629E8D-0E91-6F57-3FB5-C1B41C43FB37</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="prod_no" id="7F84C470-5905-5977-15B9-E6A54463124E">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[product id]]></commentInRDBMS>
+<generatorID>7528FA9A-7798-7B97-DDB9-7DEC4E77C6CB</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prod_desc" id="55EE0EC1-A001-7DE7-445B-BFF4196DFE28">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[product description]]></commentInRDBMS>
+<generatorID>D0D526B5-0544-3F04-F9CD-CF25539AD2AF</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prod_unitprice" id="CFA89A67-A72C-730D-C87C-D8E89BAD623D">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[product price]]></commentInRDBMS>
+<generatorID>B034EAB4-59BD-5F60-DDED-D2AF675C33FC</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prod_category" id="1083D4DC-AC91-5AAB-8030-E81DB0BAEE6F">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[product description]]></commentInRDBMS>
+<generatorID>977BF0B7-5225-52CC-7DC7-8C41633BA1E8</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pcat-id" id="3A3E1E6C-3FE4-A22E-B509-F59A5AE5FC20">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[category id]]></commentInRDBMS>
+<generatorID>8B89406E-4CBF-46B9-09E3-9E9F0ED7812E</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E238B358-CCD3-23AB-3E17-C35A14FA51E5" referredColumn="50B7EF00-FBF6-102D-2A1B-289352C5A1A0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4817E2E5-7F74-F1DD-2869-C1A2CC2FF87E" name="PRODUCT_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<generatorID>99BD7DED-F05F-9722-01CD-90ACEA623261</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F84C470-5905-5977-15B9-E6A54463124E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F5EAC87-3E2B-6DCC-2C81-EB40F1008C4B" name="PCAT_PRODUCT">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<generatorID>CBC99660-4D73-7F99-1F15-DD6A8C1CB29C</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A3E1E6C-3FE4-A22E-B509-F59A5AE5FC20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

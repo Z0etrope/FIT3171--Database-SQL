@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB629E8D-0E91-6F57-3FB5-C1B41C43FB37" name="PRODUCT">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:05:53 UTC</createdTime>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="prod_no" id="7528FA9A-7798-7B97-DDB9-7DEC4E77C6CB">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:06:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[product id]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_desc" id="D0D526B5-0544-3F04-F9CD-CF25539AD2AF">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:07:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[product description]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_unitprice" id="B034EAB4-59BD-5F60-DDED-D2AF675C33FC">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:07:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[product price]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_category" id="977BF0B7-5225-52CC-7DC7-8C41633BA1E8">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:09:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[product description]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pcat-id" id="8B89406E-4CBF-46B9-09E3-9E9F0ED7812E">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:28:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[category id]]></commentInRDBMS>
+<generatorID>CBC99660-4D73-7F99-1F15-DD6A8C1CB29C</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<referedAttribute>80444255-C288-DA1E-FB0E-DFF728CCD29A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="99BD7DED-F05F-9722-01CD-90ACEA623261" name="PRODUCT PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:06:40 UTC</createdTime>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7528FA9A-7798-7B97-DDB9-7DEC4E77C6CB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

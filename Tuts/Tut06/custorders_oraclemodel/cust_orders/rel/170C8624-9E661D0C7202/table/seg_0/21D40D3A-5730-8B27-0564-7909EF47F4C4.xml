@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21D40D3A-5730-8B27-0564-7909EF47F4C4" name="ORDERLINE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<generatorID>9D5A1637-87E4-0229-C497-8DB2FB571066</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="order_no" id="C267B7BD-6ADA-D8F6-8701-597E27D6EABC">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[order id]]></commentInRDBMS>
+<generatorID>D68A318F-5B9D-FE33-1F1F-ADD6EB7D2C99</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5307E607-472A-153C-1616-F5263A4E3526" referredColumn="ECE1F696-6291-7F66-C0C2-BACB79F94234"/>
+</associations>
+</Column>
+<Column name="prod_no" id="1679B7BC-4BB7-E79E-2879-719F268487EA">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[product id]]></commentInRDBMS>
+<generatorID>829B6937-A2C5-EBC3-671F-5139C0C68B89</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF183440-F226-0170-7818-9391D3778F0E" referredColumn="7F84C470-5905-5977-15B9-E6A54463124E"/>
+</associations>
+</Column>
+<Column name="ol_qtyordered" id="34CC4E42-7A7A-1458-D425-919D321D3121">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[quantity ordered]]></commentInRDBMS>
+<generatorID>44E93B92-B72E-9073-F27F-53F6E575440B</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ol_lineprice" id="C4C82A3C-4437-BFB7-496D-F5260FC7D65F">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[orderline lineprice]]></commentInRDBMS>
+<generatorID>4D170F95-0F39-4B6B-AF71-EADA27A0887B</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="409929FA-A3EC-77E7-AA13-151B50E0409E" name="ORDERS_ORDERLINE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<generatorID>6A6D88A2-DE4C-236D-6C71-46AA8E47FCD1</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C267B7BD-6ADA-D8F6-8701-597E27D6EABC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="582E66A4-1A54-6C12-7E7C-CF0F17F5BC47" name="PRODUCT_ORDERLINE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:31:07 UTC</createdTime>
+<generatorID>0DEB3B37-E986-A1E3-0C10-AB256F12F3CB</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1679B7BC-4BB7-E79E-2879-719F268487EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D5A1637-87E4-0229-C497-8DB2FB571066" name="ORDERLINE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:09:53 UTC</createdTime>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="order_no" id="D68A318F-5B9D-FE33-1F1F-ADD6EB7D2C99">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:11:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[order id]]></commentInRDBMS>
+<generatorID>6A6D88A2-DE4C-236D-6C71-46AA8E47FCD1</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<referedAttribute>828EB0F9-B1D2-F5EB-A4FA-2352E07598B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_no" id="829B6937-A2C5-EBC3-671F-5139C0C68B89">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:11:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[product id]]></commentInRDBMS>
+<generatorID>0DEB3B37-E986-A1E3-0C10-AB256F12F3CB</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<referedAttribute>7528FA9A-7798-7B97-DDB9-7DEC4E77C6CB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ol_qtyordered" id="44E93B92-B72E-9073-F27F-53F6E575440B">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:12:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[quantity ordered]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ol_lineprice" id="4D170F95-0F39-4B6B-AF71-EADA27A0887B">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-07 05:12:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[orderline lineprice]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="170C8624-9CB5-F0D6-8A3B-9E661D0C7202" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
