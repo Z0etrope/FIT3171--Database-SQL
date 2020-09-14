@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F3D04304-32DB-520F-8082-00D009025C35" name="TEAM">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 04:56:06 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="team_no" id="2BE02578-6BB3-548E-A9D4-3FC3A8B63B03">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 04:56:24 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,1,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_no" id="798594C8-E067-28EC-A5BB-942D2785F68B">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:07:40 UTC</createdTime>
+<generatorID>7192F96D-4756-ED7E-3A00-3787E8B74152</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DBA624BB-E776-73D8-5110-E8B625E07381</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2E83EC5-8AEC-8D93-BE19-0698187DD853" name="TEAM PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 04:56:34 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2BE02578-6BB3-548E-A9D4-3FC3A8B63B03</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

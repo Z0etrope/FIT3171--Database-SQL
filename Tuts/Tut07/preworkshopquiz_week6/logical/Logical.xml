@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="869899A7-D186-430D-B35A-72C57B5153EA" mainViewID="BD1E7EE8-25B6-F7B5-CE6C-6933986FDB16">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 04:55:32 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

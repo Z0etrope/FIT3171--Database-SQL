@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="9A92F936-888F-6BEA-751E-72B0BB5FFF96">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 04:55:32 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

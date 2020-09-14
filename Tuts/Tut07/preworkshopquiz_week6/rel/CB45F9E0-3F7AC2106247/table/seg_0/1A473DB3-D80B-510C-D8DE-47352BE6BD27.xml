@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1A473DB3-D80B-510C-D8DE-47352BE6BD27" name="TEAM">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>F3D04304-32DB-520F-8082-00D009025C35</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="team_no" id="D555416C-A94D-0360-9F48-E117C07785ED">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>2BE02578-6BB3-548E-A9D4-3FC3A8B63B03</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,1,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_emp_no" id="6DB61D91-DB89-B4B9-00DD-13F22DDDD0F4">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>798594C8-E067-28EC-A5BB-942D2785F68B</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB3F275D-24AD-A875-D1C4-EE9D204AB749" referredColumn="B30DFC38-FE24-5B77-6DE1-17AFA2583675"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B69C6E0B-8F73-00EB-4454-2E1E3F9C34B0" name="TEAM_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>E2E83EC5-8AEC-8D93-BE19-0698187DD853</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D555416C-A94D-0360-9F48-E117C07785ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B93BCFD7-FAF0-FB4F-2476-9EC9F3D40C60" name="TEAM__IDX">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>7192F96D-4756-ED7E-3A00-3787E8B74152</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6DB61D91-DB89-B4B9-00DD-13F22DDDD0F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7059CF49-3B35-7A9C-7925-FBEDD36DF6F4" name="TEAM_EMPLOYEE_FK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>7192F96D-4756-ED7E-3A00-3787E8B74152</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DB61D91-DB89-B4B9-00DD-13F22DDDD0F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

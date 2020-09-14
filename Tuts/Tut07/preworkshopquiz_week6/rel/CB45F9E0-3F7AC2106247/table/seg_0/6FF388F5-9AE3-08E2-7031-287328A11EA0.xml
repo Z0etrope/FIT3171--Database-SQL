@@ -1,0 +1,239 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6FF388F5-9AE3-08E2-7031-287328A11EA0" name="EMPLOYEE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>E4F0E087-5E1B-7461-794A-881D9253BE06</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="emp_no" id="B30DFC38-FE24-5B77-6DE1-17AFA2583675">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>DBA624BB-E776-73D8-5110-E8B625E07381</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,7,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_fname" id="7A695094-FBB4-019D-EB23-B478146FC3AB">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>5B5F5EEA-3522-D1A6-4036-4DBBC9761EB2</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_lname" id="15BE10A9-843A-72F3-AA9A-FC0F41C8C9DF">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>6BC7C20E-FDA2-F37D-DA0E-3A44102A4C61</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_street" id="48CBC8B1-FBA5-B723-0F12-EF01AC2D9703">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>5575AB7A-B23B-EAFC-2D61-8402B6D1542B</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_town" id="D0F1C6C2-14C4-5DE8-0D96-A97BE9C5223E">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>C0888401-E768-C4A7-E018-F474052A6647</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_dob" id="208E3F93-E3DF-22BE-339D-A6CC04A98101">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>6C045804-4FCE-482C-00AB-405CE046B61A</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_pcode" id="C81182E6-9AB1-4F62-0157-DFD9DF72094E">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>0ED042FE-D996-9E78-52A6-54CBCE713E87</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="taxno" id="7F1A4C5A-DEF8-9AE0-6CE9-782D69DDDA33">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>513CE1DB-9F42-9366-9FB0-7E78CFD23171</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEAM_team_no1" id="5D0D4C6E-8CD2-4976-7FF6-2E745B20794B">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>4918B467-F399-B421-98C4-8681FABAE23A</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FBEC713A-AC57-36A5-32A5-385704F6C58E" referredColumn="D555416C-A94D-0360-9F48-E117C07785ED"/>
+</associations>
+</Column>
+<Column name="TEAM_team_no" id="95CE800B-9F06-2665-96B2-CC720F85D783">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>01A31B70-36A3-4F80-9451-AF5B5D2A9C96</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52A7494F-7204-5A1F-C1A4-8647A1FE587A" referredColumn="D555416C-A94D-0360-9F48-E117C07785ED"/>
+</associations>
+</Column>
+<Column name="EMPLOYEE_emp_no" id="A6D36425-632E-4FA8-F0DA-3FCD9C9FA4D1">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>5B87BF33-EF63-B3C8-5B71-2A149FD56295</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89534B08-BC64-D3E4-AE1B-42C90897647A" referredColumn="B30DFC38-FE24-5B77-6DE1-17AFA2583675"/>
+</associations>
+</Column>
+<Column name="mentor_no" id="96FAA166-723E-613F-9512-F63D14E1A0F0">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>02F78FD5-A5BD-DFF9-310B-F6C7A6807929</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,5,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>89534B08-BC64-D3E4-AE1B-42C90897647A</dependOnForeignKeyID>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C105598E-253C-A30D-9E6D-1E1679D55E33" name="EMPLOYEE_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>F4BA372D-8123-47D2-9F9A-90415780A7F3</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B30DFC38-FE24-5B77-6DE1-17AFA2583675"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DEA7A2D3-F417-69D1-68B9-B88ADB1733D7" name="EMPLOYEE__IDX">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>7192F96D-4756-ED7E-3A00-3787E8B74152</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="95CE800B-9F06-2665-96B2-CC720F85D783"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0CE6E34C-85BB-DEAC-5050-4D3498E74F5D" name="EMPLOYEE_TEAM_FK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>7192F96D-4756-ED7E-3A00-3787E8B74152</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95CE800B-9F06-2665-96B2-CC720F85D783"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8500023B-5A99-C012-F1D9-C8E8121F074F" name="EMPLOYEE_EMPLOYEE_FK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>39559E61-E9FF-8672-02A0-BA27309265C3</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6D36425-632E-4FA8-F0DA-3FCD9C9FA4D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="913763D8-628D-3E38-20AF-B303DE1BE216" name="EMPLOYEE_TEAM_FKv2">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:14:57 UTC</createdTime>
+<generatorID>D038B035-775B-1215-9EB9-648E3C6C4607</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D0D4C6E-8CD2-4976-7FF6-2E745B20794B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

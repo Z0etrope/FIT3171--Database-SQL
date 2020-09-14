@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="employee_team" directorySegmentName="seg_0" id="7192F96D-4756-ED7E-3A00-3787E8B74152">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:07:24 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<sourcePk>E2E83EC5-8AEC-8D93-BE19-0698187DD853</sourcePk>
+<targetPk>F4BA372D-8123-47D2-9F9A-90415780A7F3</targetPk>
+<identifying>false</identifying>
+<nameOnSource>leads</nameOnSource>
+<nameOnTarget>led</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F3D04304-32DB-520F-8082-00D009025C35</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>E4F0E087-5E1B-7461-794A-881D9253BE06</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

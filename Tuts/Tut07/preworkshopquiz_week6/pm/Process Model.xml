@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="2411A94F-7B4C-274B-3645-9A95FA6AD8D8">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 04:55:32 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

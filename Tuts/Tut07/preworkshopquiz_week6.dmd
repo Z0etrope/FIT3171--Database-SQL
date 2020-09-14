@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="preworkshopquiz_week6" id="B855F73B-BE0F-9298-D8DF-EE42D1DD7618" version="3.5">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 04:55:32 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B855F73B-BE0F-9298-D8DF-EE42D1DD7618</designId>
+</OSDM_Design>

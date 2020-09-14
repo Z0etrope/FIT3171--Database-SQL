@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E4F0E087-5E1B-7461-794A-881D9253BE06" name="EMPLOYEE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:00:00 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp_no" id="DBA624BB-E776-73D8-5110-E8B625E07381">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:00:46 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,7,5</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_fname" id="5B5F5EEA-3522-D1A6-4036-4DBBC9761EB2">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:01:17 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_lname" id="6BC7C20E-FDA2-F37D-DA0E-3A44102A4C61">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:01:49 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_street" id="5575AB7A-B23B-EAFC-2D61-8402B6D1542B">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:02:12 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_town" id="C0888401-E768-C4A7-E018-F474052A6647">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:02:25 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_dob" id="6C045804-4FCE-482C-00AB-405CE046B61A">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:04:13 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_pcode" id="0ED042FE-D996-9E78-52A6-54CBCE713E87">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:04:28 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="taxno" id="513CE1DB-9F42-9366-9FB0-7E78CFD23171">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:04:48 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="team_no" id="4918B467-F399-B421-98C4-8681FABAE23A">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:06:38 UTC</createdTime>
+<generatorID>D038B035-775B-1215-9EB9-648E3C6C4607</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<referedAttribute>2BE02578-6BB3-548E-A9D4-3FC3A8B63B03</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="team_no1" id="01A31B70-36A3-4F80-9451-AF5B5D2A9C96">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:07:24 UTC</createdTime>
+<generatorID>7192F96D-4756-ED7E-3A00-3787E8B74152</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2BE02578-6BB3-548E-A9D4-3FC3A8B63B03</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_no1" id="5B87BF33-EF63-B3C8-5B71-2A149FD56295">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:10:23 UTC</createdTime>
+<generatorID>39559E61-E9FF-8672-02A0-BA27309265C3</generatorID>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DBA624BB-E776-73D8-5110-E8B625E07381</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4BA372D-8123-47D2-9F9A-90415780A7F3" name="EMPLOYEE PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-14 05:01:14 UTC</createdTime>
+<ownerDesignName>preworkshopquiz_week6</ownerDesignName>
+<engineerTo>
+<item key="CB45F9E0-E722-FA38-7554-3F7AC2106247" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DBA624BB-E776-73D8-5110-E8B625E07381</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
