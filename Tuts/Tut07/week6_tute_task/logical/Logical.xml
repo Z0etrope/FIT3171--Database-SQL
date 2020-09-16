@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="0CBA29BA-B7AC-C7D0-20EC-1BE4514DD870" mainViewID="422FCBA9-AE45-2323-9643-5248628E3144">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:38:08 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

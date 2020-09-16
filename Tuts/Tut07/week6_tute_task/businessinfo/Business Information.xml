@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="9135323D-8A5F-A459-9A6D-FCE9F699F070">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:38:09 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="F83005C5-56C5-F6BA-5487-9B7C163642AE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:38:08 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

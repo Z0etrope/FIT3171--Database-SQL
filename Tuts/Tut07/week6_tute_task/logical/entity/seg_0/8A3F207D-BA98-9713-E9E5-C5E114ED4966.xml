@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8A3F207D-BA98-9713-E9E5-C5E114ED4966" name="RENT">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:03:43 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rent_bond" id="7F6600E2-F9AF-320B-82F2-888A2832A7DB">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:03:52 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rent_lease" id="24281051-74CB-8E7C-64E2-800D4EE694A2">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:09:22 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prop_no" id="98B22C24-A8AF-B14E-2733-F74155024B0B">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:46:57 UTC</createdTime>
+<generatorID>BC1D83B9-85E3-5CE2-8676-5454A42A6699</generatorID>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<referedAttribute>5D1F9DA2-CC34-A208-B6E6-376D36CD2468</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tent_no" id="A1C33499-719F-1B87-696D-31C0FD8B1D6F">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 05:03:13 UTC</createdTime>
+<generatorID>1FE756FE-ECE9-9014-5E0A-61D729281CAE</generatorID>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<referedAttribute>2DAD4B62-260B-9CFE-671D-9100D5D73A95</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5193B760-6575-8A2F-CFF2-FE5C48B3FB3C" name="RENT PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:47:09 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>98B22C24-A8AF-B14E-2733-F74155024B0B</attributeRef>
+<attributeRef>A1C33499-719F-1B87-696D-31C0FD8B1D6F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

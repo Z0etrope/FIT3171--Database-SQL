@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B593B9CC-6C85-188E-D93C-D5CAD6732160" name="DAMAGE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:32:25 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="damage_no" id="7E3DB344-A459-13B6-7B5F-DD1E206F8C9C">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:32:31 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,5,7</ownDataTypeParameters>
+</Attribute>
+<Attribute name="damage_type" id="14FF0D34-28A6-2BE5-D4D1-1E6DF7BC6BD4">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:32:48 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="damage_date" id="CB571E8A-83CD-6993-1D7A-6DC101CAC10A">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:33:10 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="damage_cost" id="C681C3D9-195D-6E13-582F-F64BF82E6364">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:33:31 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prop_no" id="2F6F1004-6B21-8E1B-AF7A-9DBD26D40EED">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:52:54 UTC</createdTime>
+<generatorID>1F0E199B-4F4C-8392-E5B9-614E4BB90F59</generatorID>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<referedAttribute>98B22C24-A8AF-B14E-2733-F74155024B0B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tent_no" id="F31CFA1E-F44E-7DC2-C6C6-DDFB7C59F887">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 05:03:13 UTC</createdTime>
+<generatorID>1F0E199B-4F4C-8392-E5B9-614E4BB90F59</generatorID>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<referedAttribute>A1C33499-719F-1B87-696D-31C0FD8B1D6F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="275917EA-7DDA-E349-AC96-0B275AA5E4D6" name="DAMAGE PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:32:47 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7E3DB344-A459-13B6-7B5F-DD1E206F8C9C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

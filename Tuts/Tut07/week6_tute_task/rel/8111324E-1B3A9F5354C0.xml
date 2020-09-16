@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="8111324E-3D7A-B864-8C05-1B3A9F5354C0" mainViewID="212A97A8-55CE-E437-9EC4-D76CA3F1324B">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:38:15 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>
