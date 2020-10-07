@@ -1,0 +1,207 @@
+SQL> DROP TABLE damage
+  2  DROP TABLE maintenance
+  3  DROP TABLE owner
+  4  DROP TABLE property
+  5  DROP TABLE rent
+  6  DROP TABLE tenant
+  7  DROP TABLE payment
+  8  
+  9  CREATE TABLE damage (
+ 10      damage_no              NUMBER(5, 7) NOT NULL,
+ 11      damage_type            VARCHAR2(50),
+ 12      damage_date            DATE NOT NULL,
+ 13      damage_cost            VARCHAR2(50),
+ 14      rent_property_prop_no  NUMBER(7, 5) NOT NULL,
+ 15      rent_tent_no           NUMBER(7, 5) NOT NULL
+ 16  );
+
+Error starting at line : 14 in command -
+DROP TABLE damage
+DROP TABLE maintenance
+DROP TABLE owner
+DROP TABLE property
+DROP TABLE rent
+DROP TABLE tenant
+DROP TABLE payment
+
+CREATE TABLE damage (
+    damage_no              NUMBER(5, 7) NOT NULL,
+    damage_type            VARCHAR2(50),
+    damage_date            DATE NOT NULL,
+    damage_cost            VARCHAR2(50),
+    rent_property_prop_no  NUMBER(7, 5) NOT NULL,
+    rent_tent_no           NUMBER(7, 5) NOT NULL
+)
+Error report -
+ORA-00933: SQL command not properly ended
+00933. 00000 -  "SQL command not properly ended"
+*Cause:    
+*Action:
+SQL> 
+SQL> ALTER TABLE damage ADD CONSTRAINT damage_pk PRIMARY KEY ( damage_no );
+
+Error starting at line : 31 in command -
+ALTER TABLE damage ADD CONSTRAINT damage_pk PRIMARY KEY ( damage_no )
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> CREATE TABLE maintenance (
+  2      maint_no          NUMBER(7, 5) NOT NULL,
+  3      maint_date        DATE NOT NULL,
+  4      maint_type        VARCHAR2(50),
+  5      maint_cost        VARCHAR2(50 CHAR) NOT NULL,
+  6      property_prop_no  NUMBER(7, 5) NOT NULL
+  7  );
+
+Table MAINTENANCE created.
+
+SQL> 
+SQL> ALTER TABLE maintenance ADD CONSTRAINT maintenance_pk PRIMARY KEY ( maint_no );
+
+Table MAINTENANCE altered.
+
+SQL> 
+SQL> CREATE TABLE owner (
+  2      owner_no    NUMBER(7, 7) NOT NULL,
+  3      owner_name  VARCHAR2(50 CHAR) NOT NULL
+  4  );
+
+Table OWNER created.
+
+SQL> 
+SQL> ALTER TABLE owner ADD CONSTRAINT owner_pk PRIMARY KEY ( owner_no );
+
+Table OWNER altered.
+
+SQL> 
+SQL> CREATE TABLE payment (
+  2      paym_no                NUMBER(5, 7) NOT NULL,
+  3      paym_date              DATE NOT NULL,
+  4      paym_type              VARCHAR2(50) NOT NULL,
+  5      paym_amount            VARCHAR2(50) NOT NULL,
+  6      rent_property_prop_no  NUMBER(7, 5) NOT NULL,
+  7      rent_tent_no           NUMBER(7, 5) NOT NULL
+  8  );
+
+Table PAYMENT created.
+
+SQL> 
+SQL> ALTER TABLE payment
+  2      ADD CONSTRAINT chk_pay_type CHECK ( paym_type IN ( 'B',
+  3                                                         'D',
+  4                                                         'R' ) );
+
+Table PAYMENT altered.
+
+SQL> 
+SQL> ALTER TABLE payment ADD CONSTRAINT payment_pk PRIMARY KEY ( paym_no );
+
+Table PAYMENT altered.
+
+SQL> 
+SQL> CREATE TABLE property (
+  2      prop_no         NUMBER(7, 5) NOT NULL,
+  3      prop_address    VARCHAR2(50 CHAR) NOT NULL,
+  4      prop_value      VARCHAR2(50 CHAR) NOT NULL,
+  5      owner_owner_no  NUMBER(7, 7) NOT NULL
+  6  );
+
+Table PROPERTY created.
+
+SQL> 
+SQL> ALTER TABLE property ADD CONSTRAINT property_pk PRIMARY KEY ( prop_no );
+
+Table PROPERTY altered.
+
+SQL> 
+SQL> CREATE TABLE rent (
+  2      rent_bond         VARCHAR2(50) NOT NULL,
+  3      rent_lease        VARCHAR2(50) NOT NULL,
+  4      property_prop_no  NUMBER(7, 5) NOT NULL,
+  5      tenant_tent_no    NUMBER(7, 5) NOT NULL
+  6  );
+
+Table RENT created.
+
+SQL> 
+SQL> ALTER TABLE rent ADD CONSTRAINT rent_pk PRIMARY KEY ( property_prop_no,
+  2                                                        tenant_tent_no );
+
+Table RENT altered.
+
+SQL> 
+SQL> CREATE TABLE tenant (
+  2      tent_no       NUMBER(7, 5) NOT NULL,
+  3      tent_fname    VARCHAR2(50) NOT NULL,
+  4      tent_address  VARCHAR2(50) NOT NULL,
+  5      phone         VARCHAR2(50),
+  6      tent_gname    VARCHAR2(50) NOT NULL
+  7  );
+
+Table TENANT created.
+
+SQL> 
+SQL> ALTER TABLE tenant ADD CONSTRAINT tenant_pk PRIMARY KEY ( tent_no );
+
+Table TENANT altered.
+
+SQL> 
+SQL> ALTER TABLE damage
+  2      ADD CONSTRAINT damage_rent_fk FOREIGN KEY ( rent_property_prop_no,
+  3                                                  rent_tent_no )
+  4          REFERENCES rent ( property_prop_no,
+  5                            tenant_tent_no );
+
+Error starting at line : 95 in command -
+ALTER TABLE damage
+    ADD CONSTRAINT damage_rent_fk FOREIGN KEY ( rent_property_prop_no,
+                                                rent_tent_no )
+        REFERENCES rent ( property_prop_no,
+                          tenant_tent_no )
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> ALTER TABLE maintenance
+  2      ADD CONSTRAINT maintenance_property_fk FOREIGN KEY ( property_prop_no )
+  3          REFERENCES property ( prop_no );
+
+Table MAINTENANCE altered.
+
+SQL> 
+SQL> ALTER TABLE payment
+  2      ADD CONSTRAINT payment_rent_fk FOREIGN KEY ( rent_property_prop_no,
+  3                                                   rent_tent_no )
+  4          REFERENCES rent ( property_prop_no,
+  5                            tenant_tent_no );
+
+Table PAYMENT altered.
+
+SQL> 
+SQL> ALTER TABLE property
+  2      ADD CONSTRAINT property_owner_fk FOREIGN KEY ( owner_owner_no )
+  3          REFERENCES owner ( owner_no );
+
+Table PROPERTY altered.
+
+SQL> 
+SQL> ALTER TABLE rent
+  2      ADD CONSTRAINT rent_property_fk FOREIGN KEY ( property_prop_no )
+  3          REFERENCES property ( prop_no );
+
+Table RENT altered.
+
+SQL> 
+SQL> ALTER TABLE rent
+  2      ADD CONSTRAINT rent_tenant_fk FOREIGN KEY ( tenant_tent_no )
+  3          REFERENCES tenant ( tent_no );
+
+Table RENT altered.
+
+SQL> 
+SQL> set echo off

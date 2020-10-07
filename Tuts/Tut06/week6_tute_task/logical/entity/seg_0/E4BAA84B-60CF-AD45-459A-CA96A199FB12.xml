@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E4BAA84B-60CF-AD45-459A-CA96A199FB12" name="OWNER">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:46:28 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="owner_no" id="09C9B8B7-AD8A-7952-D5A5-406BE6314B84">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:46:37 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,7,7</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_name" id="F7CBCB69-30E1-8C67-732B-FF86FAFD0470">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:47:13 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="82BA1E09-7ECE-F6FA-C669-A8CD48D63372" name="OWNER PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:46:52 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>09C9B8B7-AD8A-7952-D5A5-406BE6314B84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

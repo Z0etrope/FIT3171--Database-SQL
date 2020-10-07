@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="property_rent" directorySegmentName="seg_0" id="BC1D83B9-85E3-5CE2-8676-5454A42A6699">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:46:57 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<sourcePk>56EE451E-9D73-2B00-AD5B-63FA18EC8249</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>has</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3776B3CB-EB3D-1EC0-2D25-BBED5A38DEA4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8A3F207D-BA98-9713-E9E5-C5E114ED4966</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

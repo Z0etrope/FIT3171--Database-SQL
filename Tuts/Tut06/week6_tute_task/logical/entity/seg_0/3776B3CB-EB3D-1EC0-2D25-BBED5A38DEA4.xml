@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3776B3CB-EB3D-1EC0-2D25-BBED5A38DEA4" name="PROPERTY">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:54:29 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="prop_no" id="5D1F9DA2-CC34-A208-B6E6-376D36CD2468">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:54:51 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,7,5</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prop_address" id="A061055D-679C-3D87-330A-B3AC998C571A">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:55:33 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prop_value" id="658A6161-2D47-DDCB-34A1-06044834E939">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:55:54 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_no" id="5E0F35B2-9976-FF73-AA93-D0834FD05205">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 04:36:33 UTC</createdTime>
+<generatorID>0747196F-1C25-C398-ED55-E28D17C37F17</generatorID>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<referedAttribute>09C9B8B7-AD8A-7952-D5A5-406BE6314B84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="56EE451E-9D73-2B00-AD5B-63FA18EC8249" name="PROPERTY PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-09-16 03:55:26 UTC</createdTime>
+<ownerDesignName>week6_tute_task</ownerDesignName>
+<engineerTo>
+<item key="8111324E-3D7A-B864-8C05-1B3A9F5354C0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5D1F9DA2-CC34-A208-B6E6-376D36CD2468</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
