@@ -1,0 +1,387 @@
+SQL> -- Name : Jason S
+SQL> -- ID : 28083148
+SQL> 
+SQL> -- 7.3.1
+SQL> -- ============================================================================
+SQL> insert into student values (11111111,'Bloggs','Fred','01-Jan-1990');
+
+Error starting at line : 8 in command -
+insert into student values (11111111,'Bloggs','Fred','01-Jan-1990')
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_STUDENT) violated
+
+SQL> insert into student values (11111112,'Nice','Nick','10-Oct-1994');
+
+Error starting at line : 9 in command -
+insert into student values (11111112,'Nice','Nick','10-Oct-1994')
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_STUDENT) violated
+
+SQL> insert into student values (11111113,'Wheat','Wendy','05-May-1990');
+
+Error starting at line : 10 in command -
+insert into student values (11111113,'Wheat','Wendy','05-May-1990')
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_STUDENT) violated
+
+SQL> insert into student values (11111114,'Sheen','Cindy','25-Dec-1996');
+
+Error starting at line : 11 in command -
+insert into student values (11111114,'Sheen','Cindy','25-Dec-1996')
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_STUDENT) violated
+
+SQL> 
+SQL> insert into unit values ('FIT5132','Introduction to Databases');
+
+Error starting at line : 13 in command -
+insert into unit values ('FIT5132','Introduction to Databases')
+Error at Command Line : 13 Column : 13
+Error report -
+SQL Error: ORA-00947: not enough values
+00947. 00000 -  "not enough values"
+*Cause:    
+*Action:
+SQL> insert into unit values ('FIT5016','Project');
+
+Error starting at line : 14 in command -
+insert into unit values ('FIT5016','Project')
+Error at Command Line : 14 Column : 13
+Error report -
+SQL Error: ORA-00947: not enough values
+00947. 00000 -  "not enough values"
+*Cause:    
+*Action:
+SQL> insert into unit values ('FIT5111','Student''s Life');
+
+Error starting at line : 15 in command -
+insert into unit values ('FIT5111','Student''s Life')
+Error at Command Line : 15 Column : 13
+Error report -
+SQL Error: ORA-00947: not enough values
+00947. 00000 -  "not enough values"
+*Cause:    
+*Action:
+SQL> insert into unit values ('FIT9999','FIT Last Unit');
+
+Error starting at line : 16 in command -
+insert into unit values ('FIT9999','FIT Last Unit')
+Error at Command Line : 16 Column : 13
+Error report -
+SQL Error: ORA-00947: not enough values
+00947. 00000 -  "not enough values"
+*Cause:    
+*Action:
+SQL> 
+SQL> insert into enrolment values (11111111,'FIT5132',2013,'1',35,'N');
+
+Error starting at line : 18 in command -
+insert into enrolment values (11111111,'FIT5132',2013,'1',35,'N')
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_ENROLMENT) violated
+
+SQL> insert into enrolment values (11111111,'FIT5016',2013,'1',61,'C');
+
+Error starting at line : 19 in command -
+insert into enrolment values (11111111,'FIT5016',2013,'1',61,'C')
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_ENROLMENT) violated
+
+SQL> insert into enrolment values (11111111,'FIT5132',2013,'2',42,'N');
+
+Error starting at line : 20 in command -
+insert into enrolment values (11111111,'FIT5132',2013,'2',42,'N')
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_ENROLMENT) violated
+
+SQL> insert into enrolment values (11111111,'FIT5111',2013,'2',76,'D');
+
+Error starting at line : 21 in command -
+insert into enrolment values (11111111,'FIT5111',2013,'2',76,'D')
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_ENROLMENT) violated
+
+SQL> insert into enrolment values (11111111,'FIT5132',2014,'2',null,null);
+
+Error starting at line : 22 in command -
+insert into enrolment values (11111111,'FIT5132',2014,'2',null,null)
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_ENROLMENT) violated
+
+SQL> insert into enrolment values (11111112,'FIT5132',2013,'2',83,'HD');
+
+Error starting at line : 23 in command -
+insert into enrolment values (11111112,'FIT5132',2013,'2',83,'HD')
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_ENROLMENT) violated
+
+SQL> insert into enrolment values (11111112,'FIT5111',2013,'2',79,'D');
+
+Error starting at line : 24 in command -
+insert into enrolment values (11111112,'FIT5111',2013,'2',79,'D')
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_ENROLMENT) violated
+
+SQL> insert into enrolment values (11111113,'FIT5132',2014,'2',null,null);
+
+Error starting at line : 25 in command -
+insert into enrolment values (11111113,'FIT5132',2014,'2',null,null)
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_ENROLMENT) violated
+
+SQL> insert into enrolment values (11111113,'FIT5111',2014,'2',null,null);
+
+Error starting at line : 26 in command -
+insert into enrolment values (11111113,'FIT5111',2014,'2',null,null)
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_ENROLMENT) violated
+
+SQL> insert into enrolment values (11111114,'FIT5111',2014,'2',null,null);
+
+Error starting at line : 27 in command -
+insert into enrolment values (11111114,'FIT5111',2014,'2',null,null)
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_ENROLMENT) violated
+
+SQL> 
+SQL> commit;
+
+Commit complete.
+
+SQL> 
+SQL> -- 7.3.2
+SQL> -- ============================================================================
+SQL> create sequence student_seq start with 11111115 increment by 1;
+
+Error starting at line : 33 in command -
+create sequence student_seq start with 11111115 increment by 1
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+SQL> 
+SQL> select * from cat;
+
+TABLE_NAME                                                                                                                       TABLE_TYPE 
+-------------------------------------------------------------------------------------------------------------------------------- -----------
+STUDENT_SEQ                                                                                                                      SEQUENCE   
+CUSTOMER                                                                                                                         TABLE      
+ENROLMENT                                                                                                                        TABLE      
+ENROLMENT_GOOD                                                                                                                   TABLE      
+FIT5111_STUDENT                                                                                                                  TABLE      
+MAINTENANCE                                                                                                                      TABLE      
+MYFIRSTDB                                                                                                                        TABLE      
+ORDERLINE                                                                                                                        TABLE      
+ORDERS                                                                                                                           TABLE      
+OWNER                                                                                                                            TABLE      
+PAYMENT                                                                                                                          TABLE      
+
+TABLE_NAME                                                                                                                       TABLE_TYPE 
+-------------------------------------------------------------------------------------------------------------------------------- -----------
+PRODUCT                                                                                                                          TABLE      
+PROD_CATEGORY                                                                                                                    TABLE      
+PROPERTY                                                                                                                         TABLE      
+RENT                                                                                                                             TABLE      
+STUDENT                                                                                                                          TABLE      
+STUDENT_GOOD                                                                                                                     TABLE      
+STUDENT_POOR                                                                                                                     TABLE      
+TENANT                                                                                                                           TABLE      
+UNIT                                                                                                                             TABLE      
+UNIT_GOOD                                                                                                                        TABLE      
+
+21 rows selected. 
+
+SQL> 
+SQL> insert into student values (student_seq.nextval, 'Mouse', 'Mickey', '01-Feb-1980');
+
+1 row inserted.
+
+SQL> 
+SQL> select * from student;
+
+   STU_NBR STU_LNAME                                          STU_FNAME                                          STU_DOB  
+---------- -------------------------------------------------- -------------------------------------------------- ---------
+  11111111 Bloggs                                             Fred                                               01-JAN-90
+  11111112 Nice                                               Nick                                               10-OCT-94
+  11111113 Wheat                                              Wendy                                              05-MAY-90
+  11111114 Sheen                                              Cindy                                              25-DEC-96
+  11111115 Mouse                                              Mickey                                             01-FEB-80
+  11111116 Last                                               First                                              01-JAN-99
+  11111135 Mouse                                              Mickey                                             01-FEB-80
+  11111136 Last                                               First                                              01-JAN-99
+  11111155 Mouse                                              Mickey                                             01-FEB-80
+
+9 rows selected. 
+
+SQL> 
+SQL> 
+SQL> insert into enrolment values (student_seq.currval, 'FIT5132', 2016, '2', null, null);
+
+1 row inserted.
+
+SQL> 
+SQL> commit;
+
+Commit complete.
+
+SQL> 
+SQL> select * from enrolment;
+
+   STU_NBR UNIT_CO ENROL_YEAR E ENROL_MARK ENR
+---------- ------- ---------- - ---------- ---
+  11111111 FIT5132       2013 1         35 N  
+  11111111 FIT5016       2013 1         61 C  
+  11111111 FIT5132       2013 2         42 N  
+  11111111 FIT5111       2013 2         76 D  
+  11111111 FIT5132       2014 2               
+  11111112 FIT5132       2013 2         83 HD 
+  11111112 FIT5111       2013 2         79 D  
+  11111113 FIT5132       2014 2               
+  11111113 FIT5111       2014 2               
+  11111114 FIT5111       2014 2               
+  11111115 FIT5132       2016 2               
+
+   STU_NBR UNIT_CO ENROL_YEAR E ENROL_MARK ENR
+---------- ------- ---------- - ---------- ---
+  11111116 FIT5132       2016 2               
+  11111135 FIT5132       2016 2               
+  11111136 FIT5132       2016 2               
+  11111155 FIT5132       2016 2               
+
+15 rows selected. 
+
+SQL> 
+SQL> -- 7.3.3
+SQL> -- ============================================================================
+SQL> 
+SQL> insert into student values (student_seq.nextval, 'Last', 'First', '01-Jan-1999');
+
+1 row inserted.
+
+SQL> 
+SQL> insert into enrolment values (student_seq.currval, 
+  2    (select unit_code from unit where unit_name = 'Introduction to Databases'),
+  3     2016, '2', null, null);
+
+1 row inserted.
+
+SQL> 
+SQL> commit;
+
+Commit complete.
+
+SQL> 
+SQL> select * from student;
+
+   STU_NBR STU_LNAME                                          STU_FNAME                                          STU_DOB  
+---------- -------------------------------------------------- -------------------------------------------------- ---------
+  11111111 Bloggs                                             Fred                                               01-JAN-90
+  11111112 Nice                                               Nick                                               10-OCT-94
+  11111113 Wheat                                              Wendy                                              05-MAY-90
+  11111114 Sheen                                              Cindy                                              25-DEC-96
+  11111115 Mouse                                              Mickey                                             01-FEB-80
+  11111116 Last                                               First                                              01-JAN-99
+  11111135 Mouse                                              Mickey                                             01-FEB-80
+  11111136 Last                                               First                                              01-JAN-99
+  11111155 Mouse                                              Mickey                                             01-FEB-80
+  11111156 Last                                               First                                              01-JAN-99
+
+10 rows selected. 
+
+SQL> select * from enrolment;
+
+   STU_NBR UNIT_CO ENROL_YEAR E ENROL_MARK ENR
+---------- ------- ---------- - ---------- ---
+  11111111 FIT5132       2013 1         35 N  
+  11111111 FIT5016       2013 1         61 C  
+  11111111 FIT5132       2013 2         42 N  
+  11111111 FIT5111       2013 2         76 D  
+  11111111 FIT5132       2014 2               
+  11111112 FIT5132       2013 2         83 HD 
+  11111112 FIT5111       2013 2         79 D  
+  11111113 FIT5132       2014 2               
+  11111113 FIT5111       2014 2               
+  11111114 FIT5111       2014 2               
+  11111115 FIT5132       2016 2               
+
+   STU_NBR UNIT_CO ENROL_YEAR E ENROL_MARK ENR
+---------- ------- ---------- - ---------- ---
+  11111116 FIT5132       2016 2               
+  11111135 FIT5132       2016 2               
+  11111136 FIT5132       2016 2               
+  11111155 FIT5132       2016 2               
+  11111156 FIT5132       2016 2               
+
+16 rows selected. 
+
+SQL> 
+SQL> create table FIT5111_STUDENT
+  2   as select *
+  3   from enrolment
+  4   where unit_code = 'FIT5111';
+
+Error starting at line : 62 in command -
+create table FIT5111_STUDENT
+ as select *
+ from enrolment
+ where unit_code = 'FIT5111'
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+SQL> 
+SQL> select * from fit5111_student;
+
+   STU_NBR UNIT_CO ENROL_YEAR E ENROL_MARK ENR
+---------- ------- ---------- - ---------- ---
+  11111111 FIT5111       2013 2         76 D  
+  11111112 FIT5111       2013 2         79 D  
+  11111113 FIT5111       2014 2               
+  11111114 FIT5111       2014 2               
+
+SQL> 
+SQL> -- 7.3.4
+SQL> -- ======================================================================
+SQL> 
+SQL> alter table unit
+  2    add (credit_points number(2,0) default 6);
+
+Error starting at line : 72 in command -
+alter table unit
+  add (credit_points number(2,0) default 6)
+Error report -
+ORA-01430: column being added already exists in table
+01430. 00000 -  "column being added already exists in table"
+*Cause:    
+*Action:
+SQL> 
+SQL> insert into unit values ('FIT1234', 'Unit FIT1234', 12);
+
+Error starting at line : 75 in command -
+insert into unit values ('FIT1234', 'Unit FIT1234', 12)
+Error report -
+ORA-00001: unique constraint (JSET0002.PK_UNIT) violated
+
+SQL> 
+SQL> commit;
+
+Commit complete.
+
+SQL> 
+SQL> select * from unit;
+
+UNIT_CO UNIT_NAME                                          CREDIT_POINTS
+------- -------------------------------------------------- -------------
+FIT5132 Introduction to Databases                                      6
+FIT5016 Project                                                        6
+FIT5111 Student's Life                                                 6
+FIT9999 FIT Last Unit                                                  6
+FIT9111 Unit FIT9111                                                  12
+FIT1234 Unit FIT1234                                                  12
+
+6 rows selected. 
+
+SQL> 
+SQL> set echo off
