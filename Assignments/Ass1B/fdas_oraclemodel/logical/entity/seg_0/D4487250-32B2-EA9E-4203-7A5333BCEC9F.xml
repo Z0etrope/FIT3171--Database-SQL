@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D4487250-32B2-EA9E-4203-7A5333BCEC9F" name="PROPERTY_TYPE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 14:16:07 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ptytype_id" id="11EC157C-04E1-25F9-E469-537CD925AF32">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 14:16:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for property type]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ptytype_name" id="EAAF0BE3-D2C5-A6C0-9F44-0821B36517D3">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 14:18:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of the property type]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0818E149-D5BA-11F4-A16D-8AD99E42329A" name="PROPERTY_TYPE PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 14:16:33 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>11EC157C-04E1-25F9-E469-537CD925AF32</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

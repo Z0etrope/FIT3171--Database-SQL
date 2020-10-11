@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BUILDING_BLDDAMAGE" directorySegmentName="seg_0" id="19DEC52B-0162-B6DE-2C17-B1BBBD672334">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 16:42:24 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<sourcePk>3949293E-DA14-2E22-3F3D-76E271F18EB1</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>damaged</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F407D569-A525-3EB0-8CB8-6D81F55E331F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3B1AD80D-8755-FDC8-3365-F226DF858599</targetEntity>
+<transferable>true</transferable>
+</Relation>

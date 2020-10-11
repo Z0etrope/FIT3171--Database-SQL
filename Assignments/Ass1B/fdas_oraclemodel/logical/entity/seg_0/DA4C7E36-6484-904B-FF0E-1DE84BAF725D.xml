@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA4C7E36-6484-904B-FF0E-1DE84BAF725D" name="PROPERTY">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 11:09:21 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="property_id" id="DBBFDE79-A73C-5116-61BC-4757BF4E8E0B">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 11:09:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for property]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_street" id="98071E66-8CBF-704E-107E-C4055E56799B">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 11:09:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[street name of the property]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_town" id="398F6A71-DDBE-6358-6DF9-AEC46400E5DF">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 11:09:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[town name of the property]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_postcode" id="BE7538AF-3AE8-CBB6-EA1A-C37C3F2D6221">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 11:16:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[postcode of the property]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ptytype_id" id="445CD4A9-7F54-A411-07B3-7899C7978104">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 14:22:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for property type]]></commentInRDBMS>
+<generatorID>C50784BE-7082-4BAA-4D6F-85EB04405DE4</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>11EC157C-04E1-25F9-E469-537CD925AF32</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_id" id="B813353C-BC0F-5659-D028-7F2F2FA0162D">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 16:23:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for owner]]></commentInRDBMS>
+<generatorID>612D26E5-EBA5-DBF8-6261-149949492C45</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>92A9B9D0-CF23-7B49-43B4-84F4D70916EB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lga_code" id="3A77A07E-60EF-935E-1559-F0BC22FA5E40">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 16:28:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID for lga]]></commentInRDBMS>
+<generatorID>DA863680-5958-3BCE-AEDE-21EEB8CA1B8A</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>A47B496F-DE3B-5ADC-1F6A-6E82695373DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="47EE4C89-D9E4-4F38-6846-BE24D9956512" name="PROPERTY PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 11:09:49 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DBBFDE79-A73C-5116-61BC-4757BF4E8E0B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

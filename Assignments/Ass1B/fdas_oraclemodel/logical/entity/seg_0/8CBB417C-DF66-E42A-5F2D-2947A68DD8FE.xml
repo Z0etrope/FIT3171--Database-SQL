@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8CBB417C-DF66-E42A-5F2D-2947A68DD8FE" name="ASSESSOR">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 11:19:54 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="assessor_id" id="16FDEF85-DFF0-C6DE-7652-F3F17997B1F3">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 11:20:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[id number for assessor]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assessor_phone" id="F8EC2A27-BEB2-8916-6586-D4C37094394C">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 11:20:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[phone number for the assessor]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assessor_fname" id="E7ED97BB-7147-37E3-2743-AAFE1C41A0B8">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 12:13:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[first name of the assessor]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assessor_lname" id="A8B0972D-8612-49CE-981A-299B69E4306E">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 12:14:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[last name of the assessor]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EE014782-86BB-6CE5-CE39-F8B8409EB819" name="ASSESSOR PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 11:20:22 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>16FDEF85-DFF0-C6DE-7652-F3F17997B1F3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

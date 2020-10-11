@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LGA_PROPERTY" directorySegmentName="seg_0" id="DA863680-5958-3BCE-AEDE-21EEB8CA1B8A">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 16:28:03 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<sourcePk>F524D539-5EA8-0A24-ADDB-98297DAEAD4C</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>has</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6F0E325D-9ABE-C8F5-2DC0-F27AF171E698</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DA4C7E36-6484-904B-FF0E-1DE84BAF725D</targetEntity>
+<transferable>true</transferable>
+</Relation>

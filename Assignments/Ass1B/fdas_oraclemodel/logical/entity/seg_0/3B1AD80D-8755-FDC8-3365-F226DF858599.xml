@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3B1AD80D-8755-FDC8-3365-F226DF858599" name="BUILDING_DAMAGE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 13:38:18 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="damage_cost" id="756C34EF-9C16-A608-8D52-71F20576F8C4">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 13:40:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[damage cost to the building caused by fire event]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<constraintName>chk_damagecost</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="totally_destroyed" id="8DF4805D-224C-94B9-6536-B6B6A76466A5">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 13:42:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[is the building totally destroyed (Y/N)]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<constraintName>chk_tdestroyed</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="insurance_coverage" id="79C69401-A547-9E46-27CA-F034843452A2">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 13:43:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[is the building insured (Y/N)]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<constraintName>chk_insurancecov</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="building_no" id="E2C6C05C-FD90-88D2-97EF-2EA0F0EEF20A">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 16:42:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for building]]></commentInRDBMS>
+<generatorID>19DEC52B-0162-B6DE-2C17-B1BBBD672334</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>EFB399E7-1D51-41BF-5C7B-5A60D35A379E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_id" id="E98A0701-F1BF-940F-FE8E-BCB682FCD351">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 16:42:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for property]]></commentInRDBMS>
+<generatorID>19DEC52B-0162-B6DE-2C17-B1BBBD672334</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>73186ED9-95D8-AA57-9959-C3401476A8CF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fevent_id" id="C06C70E6-28DC-044A-3C92-311A0FDE88DB">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 17:17:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for the fire event]]></commentInRDBMS>
+<generatorID>0FB461CB-D1E7-5BF3-6476-AE64E5844E43</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>BDD63FB8-A3CD-1497-5A98-4BE12B9887B0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="97D59EA9-57C7-504E-C4F0-8850F72BD8B2" name="BUILDING_DAMAGE PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-11 16:42:24 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E2C6C05C-FD90-88D2-97EF-2EA0F0EEF20A</attributeRef>
+<attributeRef>E98A0701-F1BF-940F-FE8E-BCB682FCD351</attributeRef>
+<attributeRef>C06C70E6-28DC-044A-3C92-311A0FDE88DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
