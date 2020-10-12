@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="INSURANCE_ASSESSOR" directorySegmentName="seg_0" id="1810B265-DEBB-DEDC-7E7B-15A6BD2E788C">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-12 10:07:40 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<sourcePk>EB086512-2DB7-A0DD-100C-A1F024D552DE</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>employ</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F7F058D3-5A9B-E1C5-0F68-157AAEAC3D1D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8CBB417C-DF66-E42A-5F2D-2947A68DD8FE</targetEntity>
+<transferable>true</transferable>
+</Relation>

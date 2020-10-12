@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8CBB417C-DF66-E42A-5F2D-2947A68DD8FE" name="ASSESSOR">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="42F71F0B-D392-6F6B-9A51-62CF9DF1AB6D" name="WORK_HISTORY">
 <createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 11:19:54 UTC</createdTime>
+<createdTime>2020-10-12 10:01:23 UTC</createdTime>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
@@ -15,69 +15,53 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="assessor_id" id="16FDEF85-DFF0-C6DE-7652-F3F17997B1F3">
+<Attribute name="work_startdate" id="EA9980F1-B0DC-AD4A-A7E7-1E45D4DA65C9">
 <createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 11:20:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[id number for assessor]]></commentInRDBMS>
+<createdTime>2020-10-12 10:01:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[date the assessor started working for the company]]></commentInRDBMS>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="work_leftdate" id="98D6AA13-40EC-D97A-749E-0037A386F2EF">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-12 10:03:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[date when the assessor left the company]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assessor_id" id="29FA9E21-9247-3E25-CB7B-33BD015B24C0">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-12 10:10:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[id number for assessor]]></commentInRDBMS>
+<generatorID>1A642621-BF91-ADB7-D88F-14D7211DA9B3</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>16FDEF85-DFF0-C6DE-7652-F3F17997B1F3</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="assessor_phone" id="F8EC2A27-BEB2-8916-6586-D4C37094394C">
+<Attribute name="insurance_code" id="D90BA1C6-82A8-879E-291A-F6D93471EC30">
 <createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 11:20:32 UTC</createdTime>
-<commentInRDBMS><![CDATA[phone number for the assessor]]></commentInRDBMS>
-<ownerDesignName>fdas_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="assessor_fname" id="E7ED97BB-7147-37E3-2743-AAFE1C41A0B8">
-<createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 12:13:35 UTC</createdTime>
-<commentInRDBMS><![CDATA[first name of the assessor]]></commentInRDBMS>
-<ownerDesignName>fdas_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="assessor_lname" id="A8B0972D-8612-49CE-981A-299B69E4306E">
-<createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 12:14:24 UTC</createdTime>
-<commentInRDBMS><![CDATA[last name of the assessor]]></commentInRDBMS>
-<ownerDesignName>fdas_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="insurance_code" id="7D29325C-3CDE-33CC-E6F7-EB13AE88206D">
-<createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-12 10:07:40 UTC</createdTime>
+<createdTime>2020-10-12 10:12:04 UTC</createdTime>
 <commentInRDBMS><![CDATA[id for insurance company]]></commentInRDBMS>
-<generatorID>1810B265-DEBB-DEDC-7E7B-15A6BD2E788C</generatorID>
+<generatorID>A9B16C06-A1E3-D3A7-DDFE-DDC6AD4C4D2C</generatorID>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
@@ -91,16 +75,18 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="EE014782-86BB-6CE5-CE39-F8B8409EB819" name="ASSESSOR PK">
+<identifier id="76C42A16-922A-1B3B-AA5E-EF0D6D863393" name="WORK_HISTORY PK">
 <createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 11:20:22 UTC</createdTime>
+<createdTime>2020-10-12 10:03:08 UTC</createdTime>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>16FDEF85-DFF0-C6DE-7652-F3F17997B1F3</attributeRef>
+<attributeRef>EA9980F1-B0DC-AD4A-A7E7-1E45D4DA65C9</attributeRef>
+<attributeRef>29FA9E21-9247-3E25-CB7B-33BD015B24C0</attributeRef>
+<attributeRef>D90BA1C6-82A8-879E-291A-F6D93471EC30</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

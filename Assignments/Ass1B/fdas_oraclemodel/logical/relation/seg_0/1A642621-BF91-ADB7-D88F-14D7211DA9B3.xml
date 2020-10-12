@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ASSESSOR_WORKHISTORY" directorySegmentName="seg_0" id="1A642621-BF91-ADB7-D88F-14D7211DA9B3">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-12 10:10:28 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<sourcePk>EE014782-86BB-6CE5-CE39-F8B8409EB819</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>work history</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8CBB417C-DF66-E42A-5F2D-2947A68DD8FE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>42F71F0B-D392-6F6B-9A51-62CF9DF1AB6D</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="INSURANCE_WORKHISTORY" directorySegmentName="seg_0" id="A9B16C06-A1E3-D3A7-DDFE-DDC6AD4C4D2C">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-12 10:12:04 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<sourcePk>EB086512-2DB7-A0DD-100C-A1F024D552DE</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>employee history</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F7F058D3-5A9B-E1C5-0F68-157AAEAC3D1D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>42F71F0B-D392-6F6B-9A51-62CF9DF1AB6D</targetEntity>
+<transferable>true</transferable>
+</Relation>
