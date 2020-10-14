@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F407D569-A525-3EB0-8CB8-6D81F55E331F" name="BUILDING">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="229352E7-1ABF-5AB3-E725-AE9DC9A44756" name="VISIT_DATE">
 <createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 10:51:30 UTC</createdTime>
+<createdTime>2020-10-14 07:35:55 UTC</createdTime>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
@@ -15,99 +15,93 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="building_no" id="EFB399E7-1D51-41BF-5C7B-5A60D35A379E">
+<Attribute name="building_no" id="EBB6EE66-9C9E-3932-1D79-4523E61D302B">
 <createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 10:51:35 UTC</createdTime>
+<createdTime>2020-10-14 07:47:01 UTC</createdTime>
 <commentInRDBMS><![CDATA[id for building]]></commentInRDBMS>
+<generatorID>2599FC39-E873-8170-11B4-CECDFA19A7E6</generatorID>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="building_size" id="03F6C676-09DC-053B-56BD-6EBEF359C14D">
-<createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 10:51:57 UTC</createdTime>
-<commentInRDBMS><![CDATA[size of a building]]></commentInRDBMS>
-<ownerDesignName>fdas_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="building_permit" id="E1A441D5-B5E7-29DB-BE81-C442F11B2BDC">
-<createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 10:52:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[class of a building (type)]]></commentInRDBMS>
-<ownerDesignName>fdas_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="property_id" id="73186ED9-95D8-AA57-9959-C3401476A8CF">
-<createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 15:11:13 UTC</createdTime>
-<commentInRDBMS><![CDATA[id for property]]></commentInRDBMS>
-<generatorID>EFF80FB1-D403-B5CA-A560-DE1E93DBA340</generatorID>
-<ownerDesignName>fdas_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
-</engineerTo>
-<referedAttribute>DBBFDE79-A73C-5116-61BC-4757BF4E8E0B</referedAttribute>
+<referedAttribute>EFB399E7-1D51-41BF-5C7B-5A60D35A379E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="building_status" id="264E9FED-5A14-8BB1-14ED-1BEDBD2E56A3">
+<Attribute name="property_id" id="A4E20AEB-9DF2-477B-216C-D5B4943F3EB2">
 <createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-13 14:35:45 UTC</createdTime>
-<commentInRDBMS><![CDATA[whether the building is destroyed , repaired, or original.]]></commentInRDBMS>
+<createdTime>2020-10-14 07:47:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for property]]></commentInRDBMS>
+<generatorID>2599FC39-E873-8170-11B4-CECDFA19A7E6</generatorID>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
 </engineerTo>
-<constraintName>chk_buildingstatus</constraintName>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>73186ED9-95D8-AA57-9959-C3401476A8CF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<listOfValues>
-<valueDef value="D" description="Destroyed"/>
-<valueDef value="O" description="Original"/>
-<valueDef value="R" description="Repaired"/>
-</listOfValues>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assessor_id" id="1A793473-BEB4-40CE-3CBB-70C7E92EA2A6">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 07:47:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[id number for assessor]]></commentInRDBMS>
+<generatorID>706A890F-40CE-3CB5-2642-BB692B24FD5C</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>16FDEF85-DFF0-C6DE-7652-F3F17997B1F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_visitted" id="D3DEAC9B-C539-E6C7-5B13-F563E83E0DA3">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 08:11:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[date the assessor visits the building]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_departed" id="F750D2B6-BFBC-5263-8C80-850C46DDFAC3">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 08:11:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[date the assessor finished the visit ]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="3949293E-DA14-2E22-3F3D-76E271F18EB1" name="BUILDING PK">
+<identifier id="B69C1A47-319E-53A2-B0B4-D2011974E574" name="VISIT_REPORT PK">
 <createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-11 10:51:56 UTC</createdTime>
+<createdTime>2020-10-14 07:47:01 UTC</createdTime>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>EFB399E7-1D51-41BF-5C7B-5A60D35A379E</attributeRef>
-<attributeRef>73186ED9-95D8-AA57-9959-C3401476A8CF</attributeRef>
+<attributeRef>EBB6EE66-9C9E-3932-1D79-4523E61D302B</attributeRef>
+<attributeRef>A4E20AEB-9DF2-477B-216C-D5B4943F3EB2</attributeRef>
+<attributeRef>D3DEAC9B-C539-E6C7-5B13-F563E83E0DA3</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

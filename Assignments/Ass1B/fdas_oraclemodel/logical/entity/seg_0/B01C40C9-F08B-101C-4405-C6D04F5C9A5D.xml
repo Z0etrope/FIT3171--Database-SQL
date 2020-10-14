@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B01C40C9-F08B-101C-4405-C6D04F5C9A5D" name="FIRE_CAUSED">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-13 15:15:02 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="event_caused" id="84126F2C-745D-51F2-99E0-5FFDB554D908">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-13 15:15:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[fire event that was caused by this particular fire event]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fevent_id" id="18341D54-5308-FC13-C7E9-16D90346B64A">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-13 15:50:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for the fire event]]></commentInRDBMS>
+<generatorID>2DBCDD74-8F22-E4DB-6D42-78BFCFAD381C</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>BDD63FB8-A3CD-1497-5A98-4BE12B9887B0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8E155709-78F1-83C1-BCF8-77E52A209743" name="FIRE_CAUSE PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-13 15:44:06 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>18341D54-5308-FC13-C7E9-16D90346B64A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

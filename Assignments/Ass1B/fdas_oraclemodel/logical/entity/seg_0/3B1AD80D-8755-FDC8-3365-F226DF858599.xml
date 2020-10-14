@@ -118,6 +118,36 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="lga_building_value" id="6D5B5BBA-2CA6-1F55-25AB-69A58FA27D72">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 08:15:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[building value according to lga]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lga_code" id="16B68372-87A5-C51F-0F0F-70141DC6F31C">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 08:16:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID for lga]]></commentInRDBMS>
+<generatorID>E2D4E9B4-2B4B-D043-7271-BD6068C36A62</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>A47B496F-DE3B-5ADC-1F6A-6E82695373DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="97D59EA9-57C7-504E-C4F0-8850F72BD8B2" name="BUILDING_DAMAGE PK">

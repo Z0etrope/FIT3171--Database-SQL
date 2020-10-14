@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ASSESSOR_VISITREPORT" directorySegmentName="seg_0" id="706A890F-40CE-3CB5-2642-BB692B24FD5C">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 07:47:57 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<sourcePk>EE014782-86BB-6CE5-CE39-F8B8409EB819</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>writes</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8CBB417C-DF66-E42A-5F2D-2947A68DD8FE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>229352E7-1ABF-5AB3-E725-AE9DC9A44756</targetEntity>
+<transferable>true</transferable>
+</Relation>

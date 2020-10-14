@@ -9,7 +9,7 @@
 <sourcePk>47EE4C89-D9E4-4F38-6846-BE24D9956512</sourcePk>
 <targetPk>3949293E-DA14-2E22-3F3D-76E271F18EB1</targetPk>
 <identifying>true</identifying>
-<nameOnSource>has</nameOnSource>
+<nameOnSource>has / reconstruct</nameOnSource>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

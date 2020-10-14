@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FIREEVENT_FIRECAUSE" directorySegmentName="seg_0" id="2DBCDD74-8F22-E4DB-6D42-78BFCFAD381C">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-13 15:44:06 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<sourcePk>C48A5D19-BBDD-0871-4DBE-6A515EEB6C31</sourcePk>
+<targetPk>8E155709-78F1-83C1-BCF8-77E52A209743</targetPk>
+<identifying>true</identifying>
+<nameOnSource>causes</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>02A62AFD-F8E2-8F15-FFA3-1BD831E5CF6C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B01C40C9-F08B-101C-4405-C6D04F5C9A5D</targetEntity>
+<transferable>true</transferable>
+</Relation>
