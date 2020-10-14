@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE5A0C1A-481E-B329-E04C-77C552CC11D4" name="FIRE_EVENT">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>02A62AFD-F8E2-8F15-FFA3-1BD831E5CF6C</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fevent_id" id="9D113B68-CEA5-6FCD-C186-ED8FC0DEBE83">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for the fire event]]></commentInRDBMS>
+<generatorID>BDD63FB8-A3CD-1497-5A98-4BE12B9887B0</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fevent_name" id="EC4AE3F9-826C-486A-62BB-35616B78E256">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of the fire event]]></commentInRDBMS>
+<generatorID>F190E1F4-2304-F5A6-03F9-C1A781A92334</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fevent_date" id="21676CAC-D4D5-1C53-AFD6-9D4738094A13">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[date when the fire event happened]]></commentInRDBMS>
+<generatorID>B3D25D9C-1B5C-BAFD-EE02-4F2F05C65BA9</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fevent_latitude" id="2491CBEA-997D-E8B2-2BFD-1016C9B89B10">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[latitude of the fire event]]></commentInRDBMS>
+<generatorID>F12CD247-943B-52C9-3E80-38D928526F70</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fevent_longtitude" id="EA2DF04E-DB00-C326-5F48-864F3FB3418C">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[longtitude of the fire event]]></commentInRDBMS>
+<generatorID>4535EAD6-F740-841F-0F00-D2AA7F86614C</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fevent_area" id="5705E6FE-7E46-35FF-5048-E1E1D3CCEA41">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[the size of area affected by the fire event]]></commentInRDBMS>
+<generatorID>EAFDE5CD-4F9E-8132-D0DF-028120474423</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<constraintName>chk_area</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fevent_livelost" id="3E739618-BE80-AB89-BBBC-B5A99A841001">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[fatalities of the fire event]]></commentInRDBMS>
+<generatorID>DDCDB4A3-77B3-5168-3DCF-D19B4FC66EDD</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<constraintName>chk_livelost</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fevent_tdamage" id="8B0C4AC8-1507-4EE7-8EDC-846C0DF34FFB">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[total damage caused by the fire event]]></commentInRDBMS>
+<generatorID>CB43A2AD-59A5-BAD2-3D65-DD13B6BCC717</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<constraintName>chk_tdamage</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3BC9FA3-DC0B-8A4D-5388-C9164A47F9B1" name="FIRE_EVENT_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>C48A5D19-BBDD-0871-4DBE-6A515EEB6C31</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D113B68-CEA5-6FCD-C186-ED8FC0DEBE83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

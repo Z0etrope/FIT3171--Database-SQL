@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E47E33A-217B-DEC3-174A-DF39BA631ADF" name="OWNER">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>BEDD359B-F0C1-331B-B83E-2F314E3F82D8</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="owner_id" id="33227A06-1D86-26C0-A2D2-F87AE459A7BE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for owner]]></commentInRDBMS>
+<generatorID>92A9B9D0-CF23-7B49-43B4-84F4D70916EB</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_name" id="DE1BCFDE-11A1-77F8-F80C-F5558B2E589B">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[owner name (person, organisation, etc)]]></commentInRDBMS>
+<generatorID>D3D94E3D-10C8-0CDC-9505-FE89B18F8F2D</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_phone" id="544E168E-4EB0-9872-1BC7-5645C5A3AE8C">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[contact number for owner]]></commentInRDBMS>
+<generatorID>A7B70F3A-1FA2-39C6-110D-A9B02C0234C2</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D398AD00-CF4C-EEA0-9ABB-6F423CD9F7CE" name="OWNER_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>AF770DE5-133B-DE36-53FD-53FE619845C1</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33227A06-1D86-26C0-A2D2-F87AE459A7BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

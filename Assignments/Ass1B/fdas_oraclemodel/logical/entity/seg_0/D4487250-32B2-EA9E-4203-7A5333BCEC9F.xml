@@ -39,7 +39,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -47,8 +49,9 @@
 <createdBy>Jason Setiawan</createdBy>
 <createdTime>2020-10-11 14:16:33 UTC</createdTime>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

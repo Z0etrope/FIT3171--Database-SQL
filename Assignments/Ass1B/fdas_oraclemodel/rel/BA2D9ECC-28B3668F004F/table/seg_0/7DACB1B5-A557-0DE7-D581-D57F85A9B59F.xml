@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DACB1B5-A557-0DE7-D581-D57F85A9B59F" name="INSURANCE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>F7F058D3-5A9B-E1C5-0F68-157AAEAC3D1D</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="insurance_code" id="B6DED4A1-3A2C-58E1-D9F3-CEB2C0EF4B3F">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for insurance company]]></commentInRDBMS>
+<generatorID>94C1457F-2FA2-1658-6DB7-B91D2C559D23</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="insurance_name" id="5E201798-F946-1183-FA34-EC5D78C358CA">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[insurance company name]]></commentInRDBMS>
+<generatorID>3A0E28C1-F800-4300-8D10-FF1EFBECE868</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="insurance_phone" id="950B1145-F487-3641-71B4-26DF80EB8B50">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[phone number for insurance company]]></commentInRDBMS>
+<generatorID>9D4087B3-3246-ED81-B000-AB3FED6BEF78</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E90CD24B-890F-4374-D151-7520D7CC5540" name="INSURANCE_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>EB086512-2DB7-A0DD-100C-A1F024D552DE</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6DED4A1-3A2C-58E1-D9F3-CEB2C0EF4B3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

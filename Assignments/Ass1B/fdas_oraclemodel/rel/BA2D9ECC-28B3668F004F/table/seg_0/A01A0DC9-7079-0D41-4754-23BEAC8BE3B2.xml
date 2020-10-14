@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A01A0DC9-7079-0D41-4754-23BEAC8BE3B2" name="BUILDING_DAMAGE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>3B1AD80D-8755-FDC8-3365-F226DF858599</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="damage_cost" id="2CD03877-6AD2-4A26-88DB-EFB43068DA17">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[damage cost to the building caused by fire event]]></commentInRDBMS>
+<generatorID>756C34EF-9C16-A608-8D52-71F20576F8C4</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<constraintName>chk_damagecost</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="totally_destroyed" id="A1D99B80-343D-B2C9-C5F3-A5529728F350">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[is the building totally destroyed (Y/N)]]></commentInRDBMS>
+<generatorID>8DF4805D-224C-94B9-6536-B6B6A76466A5</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<constraintName>chk_tdestroyed</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="insurance_coverage" id="E3E0043A-1FA8-D0F5-F16F-D6DB1F5CAEED">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[is the building insured (Y/N)]]></commentInRDBMS>
+<generatorID>79C69401-A547-9E46-27CA-F034843452A2</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<constraintName>chk_insurancecov</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="building_no" id="E49DA1C3-9EDF-1F0F-FA0C-33A3419A7C08">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for building]]></commentInRDBMS>
+<generatorID>E2C6C05C-FD90-88D2-97EF-2EA0F0EEF20A</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B724462-2DCA-2767-4218-33E8732A8545" referredColumn="A78B5B34-F940-FA8D-5E25-6038EC759225"/>
+</associations>
+</Column>
+<Column name="property_id" id="72435DB5-F8EE-A350-A1F7-5A14CE306DE6">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for property]]></commentInRDBMS>
+<generatorID>E98A0701-F1BF-940F-FE8E-BCB682FCD351</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B724462-2DCA-2767-4218-33E8732A8545" referredColumn="2985DC2E-A33C-E2C8-4E38-F164FEA17AE7"/>
+</associations>
+</Column>
+<Column name="fevent_id" id="78690884-2C40-D6B3-14FF-BA689B3CA04E">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for the fire event]]></commentInRDBMS>
+<generatorID>C06C70E6-28DC-044A-3C92-311A0FDE88DB</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA4D15C4-F72F-698F-EAAA-4CCE823903EA" referredColumn="9D113B68-CEA5-6FCD-C186-ED8FC0DEBE83"/>
+</associations>
+</Column>
+<Column name="lga_building_value" id="13342F80-697E-612B-DF57-0E3F9DFF32FF">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[building value according to lga]]></commentInRDBMS>
+<generatorID>6D5B5BBA-2CA6-1F55-25AB-69A58FA27D72</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lga_code" id="5152F97F-241B-A78B-91CC-08F31C06AF30">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID for lga]]></commentInRDBMS>
+<generatorID>16B68372-87A5-C51F-0F0F-70141DC6F31C</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="683404D5-3716-6921-7193-4D9247B975CF" referredColumn="1BD9EBE6-A494-1C86-5B0E-C05CFEC34978"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3FB0D8DE-83A3-D8FB-7455-360A81061BCC" name="BUILDING_DAMAGE_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>97D59EA9-57C7-504E-C4F0-8850F72BD8B2</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E49DA1C3-9EDF-1F0F-FA0C-33A3419A7C08"/>
+<colUsage columnID="72435DB5-F8EE-A350-A1F7-5A14CE306DE6"/>
+<colUsage columnID="78690884-2C40-D6B3-14FF-BA689B3CA04E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2948C8D4-1E11-1843-EB38-B5CF2E514B37" name="BUILDING_BLDDAMAGE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>19DEC52B-0162-B6DE-2C17-B1BBBD672334</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E49DA1C3-9EDF-1F0F-FA0C-33A3419A7C08"/>
+<colUsage columnID="72435DB5-F8EE-A350-A1F7-5A14CE306DE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CED55314-A2F1-E283-43B7-90D10399BA16" name="FIREEVENT_DAMAGE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>0FB461CB-D1E7-5BF3-6476-AE64E5844E43</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78690884-2C40-D6B3-14FF-BA689B3CA04E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F1A5DD8-5684-1573-43BE-A33ED1A94531" name="Relation_22">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>E2D4E9B4-2B4B-D043-7271-BD6068C36A62</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5152F97F-241B-A78B-91CC-08F31C06AF30"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

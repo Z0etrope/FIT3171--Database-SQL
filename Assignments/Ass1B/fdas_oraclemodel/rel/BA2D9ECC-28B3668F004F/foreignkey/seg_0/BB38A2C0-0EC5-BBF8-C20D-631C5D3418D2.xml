@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BB38A2C0-0EC5-BBF8-C20D-631C5D3418D2" containerWithKeyObject="1C031CBF-5D3A-15A4-DC47-5275137C0451" localFKIndex="06F97BF5-6B3A-8909-2247-D7A023DB44AF" name="ASSESSOR_VISITREPORT">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>706A890F-40CE-3CB5-2642-BB692B24FD5C</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<referredTableLongName>ASSESSOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3AB82A5F-FCBA-16FF-0877-FAE046F2E707</referredTableID>
+<keyObject>40C79019-8BEF-0ABB-F936-15B107141FFE</keyObject>
+<referredKeyID>40C79019-8BEF-0ABB-F936-15B107141FFE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>assessor_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

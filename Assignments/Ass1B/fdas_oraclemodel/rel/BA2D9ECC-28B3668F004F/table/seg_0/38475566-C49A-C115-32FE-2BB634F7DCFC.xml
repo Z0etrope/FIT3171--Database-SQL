@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="38475566-C49A-C115-32FE-2BB634F7DCFC" name="BUILDING_HISTORY">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>E68600BB-CF44-A824-D380-F75DFA35EDE3</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="oldbuilding_no" id="1FC0A24C-7D28-FC49-32F8-93022C0D3639">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[previoud building number before rebuild]]></commentInRDBMS>
+<generatorID>4BADF287-1C86-D149-62AA-C309554BF81D</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="building_no" id="E6596B32-CCA3-CDEB-6CA7-6D9330932B3E">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for building]]></commentInRDBMS>
+<generatorID>667E4F38-5D5F-11E2-0484-33720FA3C681</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9C6F8E5-0472-D131-73D4-32064D485D60" referredColumn="A78B5B34-F940-FA8D-5E25-6038EC759225"/>
+</associations>
+</Column>
+<Column name="property_id" id="D709AE16-5D33-99BB-F08A-F33D3723ABB5">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for property]]></commentInRDBMS>
+<generatorID>5BA38FCB-4BDE-9038-EF34-2D51463A63C9</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9C6F8E5-0472-D131-73D4-32064D485D60" referredColumn="2985DC2E-A33C-E2C8-4E38-F164FEA17AE7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2BAC048-3EC4-DB83-56B2-36CDC8685DAE" name="BUILDING_HISTORY_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>5E5A877C-4FD6-672B-7808-3F62F9E4B723</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6596B32-CCA3-CDEB-6CA7-6D9330932B3E"/>
+<colUsage columnID="D709AE16-5D33-99BB-F08A-F33D3723ABB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0015517D-3BD5-4EA9-BD0B-99F937F60040" name="Relation_19">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>7D3F50EC-4F29-20F9-B933-E6C237AF408E</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6596B32-CCA3-CDEB-6CA7-6D9330932B3E"/>
+<colUsage columnID="D709AE16-5D33-99BB-F08A-F33D3723ABB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

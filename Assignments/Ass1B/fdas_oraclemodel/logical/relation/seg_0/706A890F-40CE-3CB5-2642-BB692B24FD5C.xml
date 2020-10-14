@@ -8,7 +8,7 @@
 </engineerTo>
 <sourcePk>EE014782-86BB-6CE5-CE39-F8B8409EB819</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>writes</nameOnSource>
+<nameOnSource>visit</nameOnSource>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

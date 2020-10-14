@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42C2FB82-9212-D070-980C-8B31DD415302" name="BUILDING">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>F407D569-A525-3EB0-8CB8-6D81F55E331F</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="building_no" id="A78B5B34-F940-FA8D-5E25-6038EC759225">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for building]]></commentInRDBMS>
+<generatorID>EFB399E7-1D51-41BF-5C7B-5A60D35A379E</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="building_size" id="DEE99438-8C35-B92B-6E12-26BC070BB005">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[size of a building]]></commentInRDBMS>
+<generatorID>03F6C676-09DC-053B-56BD-6EBEF359C14D</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="building_permit" id="7B23B134-EE81-00D4-BF29-9F62A76651B1">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[class of a building (type)]]></commentInRDBMS>
+<generatorID>E1A441D5-B5E7-29DB-BE81-C442F11B2BDC</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="property_id" id="2985DC2E-A33C-E2C8-4E38-F164FEA17AE7">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for property]]></commentInRDBMS>
+<generatorID>73186ED9-95D8-AA57-9959-C3401476A8CF</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51CB036E-3E82-B604-2AFB-2C41F4B90A3F" referredColumn="49DB89B1-D18B-9BC5-D4E7-1DCA7078F423"/>
+</associations>
+</Column>
+<Column name="building_status" id="A9046649-A358-1B9F-397F-0ED16FCFE5DF">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[whether the building is destroyed , repaired, or original.]]></commentInRDBMS>
+<generatorID>264E9FED-5A14-8BB1-14ED-1BEDBD2E56A3</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<constraintName>chk_buildingstatus</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="D" description="Destroyed"/>
+<valueDef value="O" description="Original"/>
+<valueDef value="R" description="Repaired"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB2D8844-4BC2-25E9-792A-21CD497570F8" name="BUILDING_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>3949293E-DA14-2E22-3F3D-76E271F18EB1</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A78B5B34-F940-FA8D-5E25-6038EC759225"/>
+<colUsage columnID="2985DC2E-A33C-E2C8-4E38-F164FEA17AE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1204C361-7110-605D-E6B2-AC40308DE577" name="PROPERTY_BUILDING">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>EFF80FB1-D403-B5CA-A560-DE1E93DBA340</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2985DC2E-A33C-E2C8-4E38-F164FEA17AE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

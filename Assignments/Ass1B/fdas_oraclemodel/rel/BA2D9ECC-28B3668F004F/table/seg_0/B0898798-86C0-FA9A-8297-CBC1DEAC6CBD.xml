@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0898798-86C0-FA9A-8297-CBC1DEAC6CBD" name="WORK_HISTORY">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>42F71F0B-D392-6F6B-9A51-62CF9DF1AB6D</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="work_startdate" id="01896B74-B4AA-1F22-F3C2-0B5DE8A0C0BB">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[date the assessor started working for the company]]></commentInRDBMS>
+<generatorID>EA9980F1-B0DC-AD4A-A7E7-1E45D4DA65C9</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="work_leftdate" id="A4B7B845-20F3-80E5-1B0D-87850284F1E8">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[date when the assessor left the company]]></commentInRDBMS>
+<generatorID>98D6AA13-40EC-D97A-749E-0037A386F2EF</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assessor_id" id="9B2A5DC0-B97E-9F50-9E68-F73140BFBD6D">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id number for assessor]]></commentInRDBMS>
+<generatorID>29FA9E21-9247-3E25-CB7B-33BD015B24C0</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D7CB55E-84A3-8076-7F10-D7704F41CEF7" referredColumn="362A0843-51AD-A5CF-135F-28E5E3EDA48D"/>
+</associations>
+</Column>
+<Column name="insurance_code" id="FCDCCFC3-9335-9F18-A2DC-877381E00395">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for insurance company]]></commentInRDBMS>
+<generatorID>D90BA1C6-82A8-879E-291A-F6D93471EC30</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4609FA64-92FE-2D07-C07B-D7E283F8CE63" referredColumn="B6DED4A1-3A2C-58E1-D9F3-CEB2C0EF4B3F"/>
+</associations>
+</Column>
+<Column name="workhistory_no" id="A65C5A92-46C9-8694-1E8B-654703687986">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for work history]]></commentInRDBMS>
+<generatorID>3CB5EA7C-89F9-BCB7-B196-BDD3737F9254</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4BFC63B-12EA-7317-AAEB-D8A6D7468B06" name="WORK_HISTORY_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>76C42A16-922A-1B3B-AA5E-EF0D6D863393</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A65C5A92-46C9-8694-1E8B-654703687986"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E7EEF53-8CDB-1DD0-62B9-03575E94B38E" name="work_history_NK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>DF9987DF-1E67-24D6-DFD1-AE724AE2903A</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01896B74-B4AA-1F22-F3C2-0B5DE8A0C0BB"/>
+<colUsage columnID="9B2A5DC0-B97E-9F50-9E68-F73140BFBD6D"/>
+<colUsage columnID="FCDCCFC3-9335-9F18-A2DC-877381E00395"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32A79AC9-2B2F-D389-954D-BD34D5385325" name="ASSESSOR_WORKHISTORY">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>1A642621-BF91-ADB7-D88F-14D7211DA9B3</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B2A5DC0-B97E-9F50-9E68-F73140BFBD6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39D35CE2-51B5-D3A1-6631-7706419555F0" name="INSURANCE_WORKHISTORY">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>A9B16C06-A1E3-D3A7-DDFE-DDC6AD4C4D2C</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCDCCFC3-9335-9F18-A2DC-877381E00395"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

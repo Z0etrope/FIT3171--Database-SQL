@@ -15,38 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="building_no" id="EBB6EE66-9C9E-3932-1D79-4523E61D302B">
-<createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-14 07:47:01 UTC</createdTime>
-<commentInRDBMS><![CDATA[id for building]]></commentInRDBMS>
-<generatorID>2599FC39-E873-8170-11B4-CECDFA19A7E6</generatorID>
-<ownerDesignName>fdas_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
-</engineerTo>
-<referedAttribute>EFB399E7-1D51-41BF-5C7B-5A60D35A379E</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="property_id" id="A4E20AEB-9DF2-477B-216C-D5B4943F3EB2">
-<createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-14 07:47:01 UTC</createdTime>
-<commentInRDBMS><![CDATA[id for property]]></commentInRDBMS>
-<generatorID>2599FC39-E873-8170-11B4-CECDFA19A7E6</generatorID>
-<ownerDesignName>fdas_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
-</engineerTo>
-<referedAttribute>73186ED9-95D8-AA57-9959-C3401476A8CF</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="assessor_id" id="1A793473-BEB4-40CE-3CBB-70C7E92EA2A6">
 <createdBy>Jason Setiawan</createdBy>
 <createdTime>2020-10-14 07:47:57 UTC</createdTime>
@@ -86,6 +54,55 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="building_no" id="121A8CD9-D54E-116E-DEC4-42D3F11EC8F7">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 08:27:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for building]]></commentInRDBMS>
+<generatorID>94DCCFFF-937E-8F05-74A2-E29FF0CDACE2</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>E2C6C05C-FD90-88D2-97EF-2EA0F0EEF20A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_id" id="8683DC4D-ED97-136B-08B5-3B3CE30016B2">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 08:27:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for property]]></commentInRDBMS>
+<generatorID>94DCCFFF-937E-8F05-74A2-E29FF0CDACE2</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>E98A0701-F1BF-940F-FE8E-BCB682FCD351</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fevent_id" id="2CBDB9BF-9F9A-DEAA-144F-F9485FC7AEEC">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 08:27:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for the fire event]]></commentInRDBMS>
+<generatorID>94DCCFFF-937E-8F05-74A2-E29FF0CDACE2</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<referedAttribute>C06C70E6-28DC-044A-3C92-311A0FDE88DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -94,14 +111,16 @@
 <createdBy>Jason Setiawan</createdBy>
 <createdTime>2020-10-14 07:47:01 UTC</createdTime>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>EBB6EE66-9C9E-3932-1D79-4523E61D302B</attributeRef>
-<attributeRef>A4E20AEB-9DF2-477B-216C-D5B4943F3EB2</attributeRef>
 <attributeRef>D3DEAC9B-C539-E6C7-5B13-F563E83E0DA3</attributeRef>
+<attributeRef>121A8CD9-D54E-116E-DEC4-42D3F11EC8F7</attributeRef>
+<attributeRef>8683DC4D-ED97-136B-08B5-3B3CE30016B2</attributeRef>
+<attributeRef>2CBDB9BF-9F9A-DEAA-144F-F9485FC7AEEC</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

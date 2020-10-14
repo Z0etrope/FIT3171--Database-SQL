@@ -73,6 +73,20 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="workhistory_no" id="3CB5EA7C-89F9-BCB7-B196-BDD3737F9254">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 08:35:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for work history]]></commentInRDBMS>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="76C42A16-922A-1B3B-AA5E-EF0D6D863393" name="WORK_HISTORY PK">
@@ -83,6 +97,18 @@
 <item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>3CB5EA7C-89F9-BCB7-B196-BDD3737F9254</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="DF9987DF-1E67-24D6-DFD1-AE724AE2903A" name="work_history_NK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 08:40:32 UTC</createdTime>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
+</engineerTo>
+<newElementsIDs>EA9980F1-B0DC-AD4A-A7E7-1E45D4DA65C9,1A642621-BF91-ADB7-D88F-14D7211DA9B3,A9B16C06-A1E3-D3A7-DDFE-DDC6AD4C4D2C</newElementsIDs>
 <usedAttributes>
 <attributeRef>EA9980F1-B0DC-AD4A-A7E7-1E45D4DA65C9</attributeRef>
 <attributeRef>29FA9E21-9247-3E25-CB7B-33BD015B24C0</attributeRef>

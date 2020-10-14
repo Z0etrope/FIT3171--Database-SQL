@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BUILDING_VREPORT" directorySegmentName="seg_0" id="2599FC39-E873-8170-11B4-CECDFA19A7E6">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BUILDINGDAMAGE_VISITDATE" directorySegmentName="seg_0" id="94DCCFFF-937E-8F05-74A2-E29FF0CDACE2">
 <createdBy>Jason Setiawan</createdBy>
-<createdTime>2020-10-14 07:47:01 UTC</createdTime>
+<createdTime>2020-10-14 08:27:38 UTC</createdTime>
 <ownerDesignName>fdas_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="BA2D9ECC-DBF6-16DE-8302-28B3668F004F" value="true"/>
 </engineerTo>
-<sourcePk>3949293E-DA14-2E22-3F3D-76E271F18EB1</sourcePk>
+<sourcePk>97D59EA9-57C7-504E-C4F0-8850F72BD8B2</sourcePk>
 <identifying>true</identifying>
-<nameOnSource>visit report</nameOnSource>
+<nameOnSource>assessor visits</nameOnSource>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>F407D569-A525-3EB0-8CB8-6D81F55E331F</sourceEntity>
+<sourceEntity>3B1AD80D-8755-FDC8-3365-F226DF858599</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>229352E7-1ABF-5AB3-E725-AE9DC9A44756</targetEntity>
 <transferable>true</transferable>

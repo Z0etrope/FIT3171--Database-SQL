@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1C031CBF-5D3A-15A4-DC47-5275137C0451" name="VISIT_DATE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>229352E7-1ABF-5AB3-E725-AE9DC9A44756</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="assessor_id" id="B3C5696E-4725-3530-0A6C-4E0B134869D4">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id number for assessor]]></commentInRDBMS>
+<generatorID>1A793473-BEB4-40CE-3CBB-70C7E92EA2A6</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB38A2C0-0EC5-BBF8-C20D-631C5D3418D2" referredColumn="362A0843-51AD-A5CF-135F-28E5E3EDA48D"/>
+</associations>
+</Column>
+<Column name="date_visitted" id="0E221FA7-DC9F-FE50-B7B2-0F1CFA52E819">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[date the assessor visits the building]]></commentInRDBMS>
+<generatorID>D3DEAC9B-C539-E6C7-5B13-F563E83E0DA3</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_departed" id="A723B877-8AC7-DB2C-B0DF-4F1DDB635402">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[date the assessor finished the visit ]]></commentInRDBMS>
+<generatorID>F750D2B6-BFBC-5263-8C80-850C46DDFAC3</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="building_no" id="70862BA1-30C5-788C-DBEB-A193EF68C505">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for building]]></commentInRDBMS>
+<generatorID>121A8CD9-D54E-116E-DEC4-42D3F11EC8F7</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F912BA0-681A-FDD9-D14C-53733D65C943" referredColumn="E49DA1C3-9EDF-1F0F-FA0C-33A3419A7C08"/>
+</associations>
+</Column>
+<Column name="property_id" id="460BD954-8B7A-8653-12D3-319A34370B88">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for property]]></commentInRDBMS>
+<generatorID>8683DC4D-ED97-136B-08B5-3B3CE30016B2</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F912BA0-681A-FDD9-D14C-53733D65C943" referredColumn="72435DB5-F8EE-A350-A1F7-5A14CE306DE6"/>
+</associations>
+</Column>
+<Column name="fevent_id" id="56436F86-2067-DB3D-3A70-52DC199C8F33">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[id for the fire event]]></commentInRDBMS>
+<generatorID>2CBDB9BF-9F9A-DEAA-144F-F9485FC7AEEC</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F912BA0-681A-FDD9-D14C-53733D65C943" referredColumn="78690884-2C40-D6B3-14FF-BA689B3CA04E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0B760357-8B1C-92F3-46F5-A3CB12C77226" name="VISIT_REPORT_PK">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>B69C1A47-319E-53A2-B0B4-D2011974E574</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E221FA7-DC9F-FE50-B7B2-0F1CFA52E819"/>
+<colUsage columnID="70862BA1-30C5-788C-DBEB-A193EF68C505"/>
+<colUsage columnID="460BD954-8B7A-8653-12D3-319A34370B88"/>
+<colUsage columnID="56436F86-2067-DB3D-3A70-52DC199C8F33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06F97BF5-6B3A-8909-2247-D7A023DB44AF" name="ASSESSOR_VISITREPORT">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>706A890F-40CE-3CB5-2642-BB692B24FD5C</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3C5696E-4725-3530-0A6C-4E0B134869D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A0B3A59-6D6B-FD6B-99FE-D69F94D31588" name="BUILDINGDAMAGE_VISITDATE">
+<createdBy>Jason Setiawan</createdBy>
+<createdTime>2020-10-14 11:26:48 UTC</createdTime>
+<generatorID>94DCCFFF-937E-8F05-74A2-E29FF0CDACE2</generatorID>
+<ownerDesignName>fdas_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70862BA1-30C5-788C-DBEB-A193EF68C505"/>
+<colUsage columnID="460BD954-8B7A-8653-12D3-319A34370B88"/>
+<colUsage columnID="56436F86-2067-DB3D-3A70-52DC199C8F33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
