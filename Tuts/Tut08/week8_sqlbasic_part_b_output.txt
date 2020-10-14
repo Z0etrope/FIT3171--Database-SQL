@@ -1,0 +1,143 @@
+
+UNITCOD   SEMESTER STAFFFNAME           STAFFLNAME          
+------- ---------- -------------------- --------------------
+FIT1045          1 Gunar                Dutch               
+FIT1050          1 Sandro               Wethered            
+FIT2094          1 Lizabeth             Stubbings           
+FIT3157          1 Trixy                Warner              
+FIT3176          1 Windham              Ellard              
+FIT5145          1 Windham              Ellard              
+FIT5196          1 Windham              Ellard              
+FIT9132          1 Xena                 Epine               
+FIT9136          1 Tammi                Soane               
+FIT9137          1 Kennie               Pickin              
+
+10 rows selected. 
+
+
+UNITCOD UNITNAME                                                                                             OFFE   SEMESTER
+------- ---------------------------------------------------------------------------------------------------- ---- ----------
+FIT1045 Algorithms and programming fundamentals in python                                                    2019          1
+FIT1045 Algorithms and programming fundamentals in python                                                    2019          2
+FIT1045 Algorithms and programming fundamentals in python                                                    2020          1
+FIT1050 Web fundamentals                                                                                     2019          1
+FIT1050 Web fundamentals                                                                                     2019          2
+FIT1050 Web fundamentals                                                                                     2020          1
+FIT2094 Databases                                                                                            2019          2
+FIT2094 Databases                                                                                            2020          1
+FIT3157 Advanced web design                                                                                  2019          2
+FIT3157 Advanced web design                                                                                  2020          1
+FIT3176 Advanced database design                                                                             2019          2
+
+UNITCOD UNITNAME                                                                                             OFFE   SEMESTER
+------- ---------------------------------------------------------------------------------------------------- ---- ----------
+FIT3176 Advanced database design                                                                             2020          1
+FIT5145 Introduction to data science                                                                         2019          2
+FIT5145 Introduction to data science                                                                         2020          1
+FIT5196 Data wrangling                                                                                       2019          2
+FIT5196 Data wrangling                                                                                       2020          1
+FIT9132 Introduction to databases                                                                            2019          1
+FIT9132 Introduction to databases                                                                            2019          2
+FIT9132 Introduction to databases                                                                            2020          1
+FIT9136 Algorithms and programming foundations in Python                                                     2019          1
+FIT9136 Algorithms and programming foundations in Python                                                     2019          2
+FIT9136 Algorithms and programming foundations in Python                                                     2020          1
+
+UNITCOD UNITNAME                                                                                             OFFE   SEMESTER
+------- ---------------------------------------------------------------------------------------------------- ---- ----------
+FIT9137 Introduction to computer architecture and networks                                                   2019          2
+FIT9137 Introduction to computer architecture and networks                                                   2020          1
+
+24 rows selected. 
+
+
+UNITCOD   SEMESTER C CLD TIME
+------- ---------- - --- ----
+FIT3176          1 L Thu 11AM
+FIT3176          1 T Thu 02PM
+FIT5145          1 L Wed 01PM
+FIT5145          1 T Wed 02PM
+FIT5196          1 L Fri 11AM
+FIT5196          1 T Fri 12PM
+
+6 rows selected. 
+
+
+UNITCOD UNITNAME                                                                                               SEMESTER YEAR       MARK GRA
+------- ---------------------------------------------------------------------------------------------------- ---------- ---- ---------- ---
+FIT1045 Algorithms and programming fundamentals in python                                                             1 2019         83 HD 
+FIT1050 Web fundamentals                                                                                              1 2019         61 C  
+FIT2094 Databases                                                                                                     2 2019         52 P  
+FIT3157 Advanced web design                                                                                           2 2019         62 C  
+FIT3176 Advanced database design                                                                                      1 2020            WH 
+
+
+PREREQU PREREQUNITNAME                                                                                      
+------- ----------------------------------------------------------------------------------------------------
+FIT9132 Introduction to databases                                                                           
+FIT9136 Algorithms and programming foundations in Python                                                    
+
+
+    STUDID STUDLNAME            STUDFNAME           
+---------- -------------------- --------------------
+  12489379 Bwy                  Gilberto            
+  12511467 Rigney               Francyne            
+  13028303 Mendus               Herculie            
+  13119134 Lindblom             Shandra             
+  13390148 Kilgour              Brier               
+  13453333 Moynihan             Pierrette           
+  13742778 Eyden                Warden              
+  14374036 Serman               Claudette           
+  14615430 Dibdale              Siffre              
+  14635701 Yard                 Cord                
+  14676780 Sperrett             Niki                
+
+    STUDID STUDLNAME            STUDFNAME           
+---------- -------------------- --------------------
+  14900897 Rottger              Casper              
+  14996864 Toby                 Odele               
+  15127454 Stubbings            Lizabeth            
+  15875842 Blabber              Marci               
+  16476616 Kardos               Mattheus            
+  17013887 Wethered             Harv                
+  17030353 Ghiroldi             Mychal              
+  17872041 Rolph                Aristotle           
+  18012671 Clapton              Starr               
+  18063424 Cliburn              Lynnell             
+  19633815 Rheam                Tessie              
+
+    STUDID STUDLNAME            STUDFNAME           
+---------- -------------------- --------------------
+  20277720 Toby                 Odele               
+  20648900 Whistan              Aleda               
+  20752513 MacGinney            Aldwin              
+  20776000 Brewer               Viviana             
+
+26 rows selected. 
+
+
+    STUDID STUDFNAME            STUDLNAME            YEAR   SEMESTER UNITCOD
+---------- -------------------- -------------------- ---- ---------- -------
+  12511467 Francyne             Rigney               2020          1 FIT3176
+  12802225 Friedrick            Geist                2020          1 FIT3176
+  12842838 Herminia             Mendus               2020          1 FIT3176
+  13028303 Herculie             Mendus               2020          1 FIT3176
+  13119134 Shandra              Lindblom             2020          1 FIT3176
+  13390148 Brier                Kilgour              2020          1 FIT3176
+  13880303 Shadow               Lamberton            2020          1 FIT5196
+  14615430 Siffre               Dibdale              2020          1 FIT5196
+  15067408 Eada                 Royds                2020          1 FIT5196
+  17030353 Mychal               Ghiroldi             2020          1 FIT1050
+  19633815 Tessie               Rheam                2020          1 FIT9137
+
+    STUDID STUDFNAME            STUDLNAME            YEAR   SEMESTER UNITCOD
+---------- -------------------- -------------------- ---- ---------- -------
+  20648900 Aleda                Whistan              2020          1 FIT9137
+  20776000 Viviana              Brewer               2020          1 FIT9137
+  21585680 Elihu                Fer                  2020          1 FIT1045
+  24702705 Mellicent            Staggs               2020          1 FIT9132
+  25257376 Carolee              Bonnor               2020          1 FIT9136
+  25828434 Cathrin              Smullin              2020          1 FIT9132
+
+17 rows selected. 
+
