@@ -12,7 +12,8 @@ even if the artwork is bought before the date the display is over, it will still
 (ii)
 aw_display that has ended/completed will have a date value instead of null value
 
-
+(iii)
+artwork that has 0 Movement i.e. necer been displayed on a gallery is not shown
 
 */
 
@@ -46,7 +47,26 @@ ORDER BY
 2(ii) Query 2
 */
 --PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
-
+SELECT 
+    d.artist_code,
+    d.artwork_no,
+    a.artwork_title,
+    d.gallery_id,
+    g.gallery_name,
+    d.aw_display_start_date,
+    (d.aw_display_end_date - d.aw_display_start_date)AS Number_of_days_in_gallery
+FROM 
+    aw_display d 
+    JOIN gallery g ON d.gallery_id = g.gallery_id
+    JOIN artwork a ON d.artist_code = a.artist_code
+                   AND d.artwork_no = a.artwork_no
+WHERE 
+    d.aw_display_end_date IS NOT NULL
+    AND (d.aw_display_end_date - d.aw_display_start_date)< 13
+ORDER BY
+    artist_code asc,
+    artwork_no asc,
+    (d.aw_display_end_date - d.aw_display_start_date) asc;
 
 
 
@@ -54,8 +74,29 @@ ORDER BY
 2(iii) Query 3
 */
 --PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
+SELECT artist_code, artwork_no, artwork_title, Number_of_Movement
+FROM
+(
+SELECT
+    s.artist_code,
+    s.artwork_no,
+    a.artwork_title,
+    COUNT(*) as Number_of_Movement,
+    avg(count(*))over() as averages
+FROM 
+    aw_status s 
+    JOIN artwork a ON s.artist_code = a.artist_code
+                   AND s.artwork_no = a.artwork_no
+WHERE
+    s.aws_action = 'T'
+GROUP BY 
+    s.artist_code, s.artwork_no, a.artwork_title
+)
+WHERE Number_of_Movement < averages;
 
+    
 
+    
 
 
 
@@ -67,12 +108,8 @@ ORDER BY
 
 
 
-
 /*
 2(v) Query 5
 */
 --PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
-
-
-
 
