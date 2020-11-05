@@ -18,7 +18,7 @@
 --PLEASE PLACE REQUIRED SQL STATEMENT(S) FOR THIS PART HERE
 
 --artwork insert
-INSERT INTO artwork VALUES(1, 1, 'Lisamona', 1000000, TO_DATE('14-Feb-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'));
+INSERT INTO artwork VALUES(1, 1, 'Lisamona', 1000000, TO_DATE('14-Nov-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'));
 INSERT INTO artwork VALUES(2, 1, 'Nekid Grandma', 2000000, TO_DATE('15-Mar-2020 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'));
 INSERT INTO artwork VALUES(1, 2, 'Not Thinker', 1500000, TO_DATE('03-Jun-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'));
 INSERT INTO artwork VALUES(3, 1, 'What?', 1750000, TO_DATE('29-Oct-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'));
@@ -50,13 +50,13 @@ INSERT INTO aw_display VALUES(10, 12, 1, TO_DATE('01-Mar-2020 10:00:00 AM','dd-m
 --sale insert
 
 INSERT INTO sale VALUES(1, TO_DATE('15-Jan-2020 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 2900000, 2, 1);
-INSERT INTO sale VALUES(2, TO_DATE('20-Oct-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 3600000, 3, 4);
+INSERT INTO sale VALUES(2, TO_DATE('20-Oct-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 4000000, 3, 4);
 INSERT INTO sale VALUES(3, TO_DATE('20-Aug-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 2250000, 5, 5);
-INSERT INTO sale VALUES(4, TO_DATE('15-Apr-2020 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 3000000, 8, 7);
+INSERT INTO sale VALUES(4, TO_DATE('15-Apr-2020 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 3300000, 8, 7);
 
 --aw_status 
 
-INSERT INTO aw_status VALUES(1, 1, 1, TO_DATE('14-Feb-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 'W', NULL);
+INSERT INTO aw_status VALUES(1, 1, 1, TO_DATE('14-Nov-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 'W', NULL);
 INSERT INTO aw_status VALUES(2, 2, 1, TO_DATE('15-Mar-2020 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 'W', NULL);
 INSERT INTO aw_status VALUES(3, 1, 2, TO_DATE('03-Jun-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 'W', NULL);
 INSERT INTO aw_status VALUES(4, 3, 1, TO_DATE('29-Oct-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 'W', NULL);

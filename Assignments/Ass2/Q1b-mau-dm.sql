@@ -1,7 +1,7 @@
 --****PLEASE ENTER YOUR DETAILS BELOW****
 --Q1b-mau-dm.sql
---Student ID:
---Student Name:
+--Student ID:28083148
+--Student Name:Jason Setiawan
 --Tutorial No:
 
 /* Comments for your marker:
@@ -21,9 +21,6 @@ CREATE SEQUENCE awstatus_seq START WITH 300 INCREMENT BY 1;
 CREATE SEQUENCE awdisplay_seq START WITH 300 INCREMENT BY 1;
 
 CREATE SEQUENCE sale_seq START WITH 300 INCREMENT BY 1;
-
-
-
 
 
 /*
@@ -59,5 +56,7 @@ INSERT INTO aw_display VALUES(awdisplay_seq.NEXTVAL, 17, 1, TO_DATE('22-Oct-2020
 1b(iv) Take the necessary steps in the database to record changes. 
 */
 --PLEASE PLACE REQUIRED SQL STATEMENT(S) FOR THIS PART HERE
-INSERT INTO sale VALUES(sale_seq.NEXT, TO_DATE('22-Oct-2020 02:30:00 PM','dd-mon-yyyy hh:mi:ss PM')+1+5, 850000, 1, (SELECT aw_display_id FROM aw_display WHERE artist_code = 17 AND artwork_no = 1));
-INSERT INTO aw_status(awstatus_seq.NEXTVAL, 17, 1, TO_DATE('22-Oct-2020 02:30:00 PM','dd-mon-yyyy hh:mi:ss PM')+1+5, 'S', NULL);
+INSERT INTO sale VALUES(sale_seq.NEXTVAL, TO_DATE('22-Oct-2020 02:30:00 PM','dd-mon-yyyy hh:mi:ss PM')+1+5, 850000, 1, (SELECT aw_display_id FROM aw_display WHERE artist_code = 17 AND artwork_no = 1));
+INSERT INTO aw_status VALUES(awstatus_seq.NEXTVAL, 17, 1, TO_DATE('22-Oct-2020 02:30:00 PM','dd-mon-yyyy hh:mi:ss PM')+5+1, 'S', NULL);
+
+
