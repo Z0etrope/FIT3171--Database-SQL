@@ -2,7 +2,7 @@
 --Q2-mau-queries.sql
 --Student ID:28083148
 --Student Name:Jason Setiawan
---Tutorial No:
+--Tutorial No:Online-01
 
 /* Comments for your marker:
 even if the artwork is bought before the date the display is over, it will still be displayed on the gallery. it will then be delivered to the owner after the display date is over.
@@ -91,13 +91,11 @@ WHERE
 GROUP BY 
     s.artist_code, s.artwork_no, a.artwork_title
 )
-WHERE Number_of_Movement < averages;
-
-    
-
-    
-
-
+WHERE Number_of_Movement < averages
+ORDER BY 
+    Number_of_Movement asc,
+    artist_code asc,
+    artwork_no asc;
 
 /*
 2(iv) Query 4
@@ -122,9 +120,6 @@ WHERE NOT EXISTS (SELECT *
 ORDER BY
     a.artist_code asc,
     a.artwork_title asc;
-
-
-
 /*
 2(v) Query 5
 */
