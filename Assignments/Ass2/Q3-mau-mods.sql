@@ -66,14 +66,16 @@ WHERE customer_id = 10;
 */
 --PLEASE PLACE REQUIRED SQL STATEMENTS FOR THIS PART HERE
 
-CREATE TABLE exhibition(
-    exhibition_id NUMBER(8),
-    exhibition_name VARCHAR(50),
-    exhibition_theme CHAR(1),
-    exhibition_number_of_artworks NUMBER(3)
-)
+CREATE TABLE exhibition (
+    exhibition_id                 NUMBER(8) NOT NULL,
+    exhibition_name               VARCHAR(50) NOT NULL,
+    exhibition_theme              CHAR(1) NOT NULL,
+    exhibition_number_of_artworks NUMBER(3) NOT NULL
+);
 
 ALTER TABLE exhibition ADD CONSTRAINT exhibition_pk PRIMARY KEY ( exhibition_id );
+
+ALTER TABLE exhibition ADD CONSTRAINT chk_exhibition_number_of_artworks CHECK (exhibition_number_of_artworks > 0);
 
 ALTER TABLE exhibition
     ADD CONSTRAINT chk_exhibition_theme CHECK ( exhibition_theme IN ( 'A', 'M', 'O') );
@@ -89,15 +91,28 @@ COMMENT ON COLUMN exhibition.exhibition_number_of_artworks IS
 
 COMMENT ON COLUMN exhibition.exhibition_theme IS
     'Exhibition Theme
+    
 A - Artist 
 M - Media
 O - Other
 
 ';
 
+INSERT INTO exhibition VALUES(1, 'Jessi Alward Debut', 'A', 1);
 
+ALTER TABLE aw_display
+ADD exhibition_id NUMBER(8);
 
-
+ALTER TABLE aw_display
+    ADD CONSTRAINT aw_display_exhibition FOREIGN KEY ( exhibition_id )
+        REFERENCES exhibition ( exhibition_id );
+        
+COMMENT ON COLUMN aw_display.exhibition_id IS
+    'identifier number for exhibition';
+        
+UPDATE aw_display
+SET exhibition_id = 1
+WHERE artist_code = 3 AND artwork_no = 1 AND aw_display_start_date = TO_DATE('20-Dec-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM');
 
 
 
