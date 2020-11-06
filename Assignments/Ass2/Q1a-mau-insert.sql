@@ -116,6 +116,6 @@ INSERT INTO aw_status VALUES(52, 1, 2, TO_DATE('03-Mar-2020 10:00:00 AM','dd-mon
 INSERT INTO aw_status VALUES(53, 11, 1, TO_DATE('11-Jun-2020 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 'R', NULL);
 INSERT INTO aw_status VALUES(54, 1, 1, TO_DATE('06-Jan-2020 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM'), 'R', NULL);
 
-
+commit;
 
 

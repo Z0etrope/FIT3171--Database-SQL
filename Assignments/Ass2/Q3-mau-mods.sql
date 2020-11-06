@@ -61,6 +61,8 @@ WHERE customer_id = 9;
 UPDATE customer
 SET customer_buy_count = 0
 WHERE customer_id = 10;
+
+commit;
 /*
 3(ii) Changes to live database 2
 */
@@ -114,7 +116,7 @@ UPDATE aw_display
 SET exhibition_id = 1
 WHERE artist_code = 3 AND artwork_no = 1 AND aw_display_start_date = TO_DATE('20-Dec-2019 10:00:00 AM','dd-mon-yyyy hh:mi:ss AM');
 
-
+commit;
 
 
 
